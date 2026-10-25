@@ -39,3 +39,6 @@ results/**
 outputs/
 dist/
 build/
+
+docs/
+PromptDengarKelas.md
