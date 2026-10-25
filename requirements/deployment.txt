@@ -1,0 +1,6 @@
+-r core.txt
+# Add compatible, verified version constraints before installation.
+torch
+transformers
+gradio
+# faster-whisper is an optional export/runtime candidate; adopt only after parity checks.

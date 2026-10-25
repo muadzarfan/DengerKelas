@@ -1,0 +1,4 @@
+# Add compatible, verified version constraints before installation.
+numpy
+soundfile
+scipy

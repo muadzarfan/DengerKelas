@@ -1,0 +1,36 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Data, recordings, generated audio, and model weights
+data/raw/
+data/processed/
+data/checkpoints/**
+!data/checkpoints/.gitkeep
+*.wav
+*.mp3
+*.flac
+*.pt
+*.pth
+*.safetensors
+*.onnx
+
+# Caches and generated outputs
+.cache/
+hf_cache/
+wandb/
+mlruns/
+results/**
+!results/.gitkeep
+outputs/
+dist/
+build/

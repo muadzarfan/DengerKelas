@@ -1,0 +1,8 @@
+-r core.txt
+# Add compatible, verified version constraints before installation.
+torch
+transformers
+datasets
+evaluate
+jiwer
+accelerate
