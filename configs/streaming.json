@@ -1,0 +1,17 @@
+{
+  "model_path": "data/checkpoints/whisper-tiny-ct2",
+  "device": "cpu",
+  "compute_type": "int8",
+  "cpu_threads": 4,
+  "beam_size": 1,
+  "language": "id",
+  "task": "transcribe",
+  "initial_seconds": 2.5,
+  "update_seconds": 1.0,
+  "window_seconds": 18.0,
+  "overlap_seconds": 3.0,
+  "max_audio_seconds": 24.0,
+  "max_session_seconds": 300.0,
+  "energy_threshold": 0.003,
+  "sample_rate": 16000
+}

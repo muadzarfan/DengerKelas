@@ -1,5 +1,16 @@
 # Decisions, assumptions, and risks
 
+## Step 2 decisions and verified changes
+
+- Step 2 is a pretrained-only feasibility baseline, using the upstream CTranslate2 conversion of multilingual Whisper Tiny with faster-whisper/CPU INT8. No project fine-tuning or dataset workflow has begun.
+- Repaired `.venv` with the available Python 3.12.14 runtime and installed/pinned deployment dependencies; preserved Step 1's Python 3.14 environment. Full installed lock and imports are verified. Training remains separate.
+- Gradio custom HTML with a Web Audio/AudioWorklet PCM bridge supplies explicit incremental chunks and an ordered Stop marker. One background decoder, no inference-job queue, 18-second context/three-second overlap, 24-second raw-audio bound and 300-second sessions.
+- History is frozen by audio-window age. It is not settled/confident text or the final agreement policy. Recognition/timestamp errors remain.
+- Bounded browser replay and real microphone use were verified on the detected i5-13420H machine. The student confirmed this as the demonstration computer and confirmed Start/live updates/Stop/Reset. No numeric assignment latency threshold is implied.
+- A failed rapid restart was recorded and corrected by isolating old async AudioContext cleanup/status from new capture setup; consecutive sessions were rechecked. Keep failure evidence rather than deleting it.
+- Microphone waveform files are not written. Timing logs may contain transcript text and stay local/ignored; export public replay logs or redacted numeric microphone summaries only.
+- See `STEP2_STREAMING_FEASIBILITY.md` for actual observations, configuration and limits. No conceptual scope change was made.
+
 ## Project decisions
 
 - Rename KelasTeks to **DengerKelas**; preserve the previously agreed problem, architecture, research direction, target users, and bounded scope.
@@ -18,10 +29,10 @@
 | Official assignment forms | Not present in inspected workspace; source section mapping is from pasted summary only | Obtain both `.docx` forms and verify all tables/selected and struck-out options |
 | Cross-course reuse | Administrative permission unknown | Ask both lecturers; keep reports distinct meanwhile |
 | Group rules, deadlines, packaging | Not fully specified | Confirm individually with each course; do not mistake 31 Aug 2026 verification date for deadline |
-| Python/runtime compatibility | Detected Python 3.14.6 may not be supported by chosen ML stack; packages absent | Establish supported Python version from official current package documentation during Step 2, then install pinned compatible dependencies in isolated env |
-| Venv pip bootstrap | Standard `python -m venv` failed at `ensurepip`; `--without-pip` succeeded | Repair/install pip in the isolated environment using approved mechanism before dependency installation |
-| Hardware/GPU access | CIM and `nvidia-smi` unavailable; GPU and physical memory unknown | Inspect intended demo machine directly and run local inference benchmark |
-| Streaming responsiveness | Whisper is not natively streaming; repeated-window strategy can add latency/revisions/backlog | Step 2 proof of continuous local mic transcription; bound buffers and measure backlog |
+| Python/runtime compatibility | Step 2 deployment verified with Python 3.12.14 and pinned installed stack | Verify training framework compatibility separately before training |
+| Venv pip bootstrap | Step 1 failure resolved with environment-targeted pip and a Python 3.12 venv | Use the documented interpreter and installed lock |
+| Hardware/GPU access | CPU/RAM detected; CTranslate2 sees zero CUDA devices; CPU INT8 verified | Other hardware/GPU modes need their own check |
+| Streaming responsiveness | Bounded streaming verified in Step 2; transient lag/recognition errors remain | Broaden natural speech/noise evaluation and measure final trained-checkpoint performance |
 | Model/data suitability | Indonesian lecture domain and accent/noise coverage uncertain | Inspect sources/metadata, test held-out and user audio, report bias and limits |
 | Noise data/licensing | DEMAND file availability, channel selection, terms not yet checked | Verify official source and license before acquisition; retain attribution |
 | Participant recordings | Consent, privacy, and storage details need an approved protocol | Confirm course/ethics expectations, consent, retention and anonymization before collecting |

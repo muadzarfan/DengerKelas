@@ -1,0 +1,1080 @@
+{
+  "date": "2026-10-25",
+  "conclusion": "Pass within tested conditions",
+  "human_confirmation": {
+    "answer": "Passed on the intended demonstration computer",
+    "source": "Direct student reply in this chat to the Start/live text/Stop/Reset checklist",
+    "scope": "Functional confirmation by the student; not a five-user evaluation"
+  },
+  "public_replays": [
+    {
+      "log": "results/step2/7566d5936983478ca4189192c2dceb29.jsonl",
+      "audio_seconds": 9.42,
+      "elapsed_seconds": 10.100143300020136,
+      "source": "paced_public_fixture",
+      "first_text_from_session_start_s": 3.117639300005976,
+      "first_text_from_energy_onset_s": 1.8641242000157945,
+      "inference_seconds": {
+        "n": 8,
+        "median": 0.6059036500228103,
+        "max": 0.6788915999932215,
+        "individual": [
+          0.6134839000296779,
+          0.4559789999620989,
+          0.6205540000228211,
+          0.5983234000159428,
+          0.5930283000343479,
+          0.6788915999932215,
+          0.5380668999860063,
+          0.6754298000014387
+        ]
+      },
+      "server_emission_interval_s": {
+        "n": 7,
+        "median": 0.9951699000084773,
+        "max": 1.164787099987734,
+        "individual": [
+          0.8425292000174522,
+          1.164787099987734,
+          0.9775678999722004,
+          0.9951699000084773,
+          1.0861034000408836,
+          0.8587193999555893,
+          1.0575648000231013
+        ]
+      },
+      "processing_lag_s": {
+        "n": 8,
+        "median": 0.5,
+        "max": 0.5,
+        "individual": [
+          0.5,
+          0.25,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.0
+        ]
+      },
+      "first_20_lag_median_s": 0.5,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 38,
+      "audio_sample_count": 150720,
+      "chunk_arrival_span_s": 9.169785499980208,
+      "streaming_compute_load": 0.5067682484124794,
+      "rss_bytes": {
+        "n": 8,
+        "median": 159787008.0,
+        "max": 160645120,
+        "individual": [
+          158695424,
+          159166464,
+          159375360,
+          159731712,
+          159842304,
+          160030720,
+          160645120,
+          160497664
+        ]
+      },
+      "rollovers": 0,
+      "max_buffer_samples": 150720,
+      "max_buffer_seconds": 9.42,
+      "inference_job_queue": 0,
+      "text_updates": 8,
+      "browser_render_ack_count": 0,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 0
+      },
+      "error": null,
+      "cancelled": false,
+      "final_text": "Anda juga bisa mempunyai lokam penduan yang mengandung secumulakan cil element non-lokam seperti karpon.",
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1
+    },
+    {
+      "log": "results/step2/6be8480673874bbda96040a610538e61.jsonl",
+      "audio_seconds": 9.4213125,
+      "elapsed_seconds": 10.159943100006785,
+      "source": "browser_paced_public_fixture",
+      "first_text_from_session_start_s": 3.6781017999746837,
+      "first_text_from_energy_onset_s": 2.251871899992693,
+      "inference_seconds": {
+        "n": 8,
+        "median": 0.6652461999910884,
+        "max": 0.7544006000389345,
+        "individual": [
+          0.7544006000389345,
+          0.6065853000036441,
+          0.6103785000159405,
+          0.6291913000168279,
+          0.7279538000002503,
+          0.7013010999653488,
+          0.7308979000081308,
+          0.5000659999786876
+        ]
+      },
+      "server_emission_interval_s": {
+        "n": 7,
+        "median": 1.0004533999599516,
+        "max": 1.0960476999753155,
+        "individual": [
+          0.8573002000339329,
+          1.0004533999599516,
+          1.0205832000356168,
+          1.0960476999753155,
+          0.97213940002257,
+          1.034844699956011,
+          0.5004319000290707
+        ]
+      },
+      "processing_lag_s": {
+        "n": 8,
+        "median": 0.5,
+        "max": 0.75,
+        "individual": [
+          0.75,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.6723125,
+          0.0
+        ]
+      },
+      "first_20_lag_median_s": 0.5,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 38,
+      "audio_sample_count": 150741,
+      "chunk_arrival_span_s": 9.164727299998049,
+      "streaming_compute_load": 0.5583908293061889,
+      "rss_bytes": {
+        "n": 8,
+        "median": 268146688.0,
+        "max": 269418496,
+        "individual": [
+          266760192,
+          268242944,
+          268103680,
+          267272192,
+          267431936,
+          269418496,
+          268189696,
+          269197312
+        ]
+      },
+      "rollovers": 0,
+      "max_buffer_samples": 150741,
+      "max_buffer_seconds": 9.4213125,
+      "inference_job_queue": 0,
+      "text_updates": 8,
+      "browser_render_ack_count": 8,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 8,
+        "median": 0.14393989997915924,
+        "max": 0.2794329000171274,
+        "individual": [
+          0.2615745000075549,
+          0.15459049999481067,
+          0.1708630000357516,
+          0.1332892999635078,
+          0.05307850003009662,
+          0.08065129996975884,
+          0.2794329000171274,
+          0.02913260000059381
+        ]
+      },
+      "error": null,
+      "cancelled": false,
+      "final_text": "Anda juga bisa mempunyai lokam penduan yang mengandung secumulakan cil element non-lokam seperti karpon.",
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1
+    },
+    {
+      "log": "results/step2/2f87c46520844ed2bbd2be7d7be1fb4e.jsonl",
+      "audio_seconds": 125.0,
+      "elapsed_seconds": 129.43029979994753,
+      "source": "browser_paced_public_fixture",
+      "first_text_from_session_start_s": 3.8355035999557003,
+      "first_text_from_energy_onset_s": 2.3990470999851823,
+      "inference_seconds": {
+        "n": 123,
+        "median": 0.7630524000269361,
+        "max": 1.5820630000089295,
+        "p95": 1.1210634900373406
+      },
+      "server_emission_interval_s": {
+        "n": 122,
+        "median": 1.0409775500011165,
+        "max": 1.5835248999646865,
+        "p95": 1.1558646700286772
+      },
+      "processing_lag_s": {
+        "n": 123,
+        "median": 0.5,
+        "max": 2.249,
+        "p95": 1.2499
+      },
+      "first_20_lag_median_s": 0.75,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 500,
+      "audio_sample_count": 2000000,
+      "chunk_arrival_span_s": 128.4538519999478,
+      "streaming_compute_load": 0.7946726344004273,
+      "rss_bytes": {
+        "n": 123,
+        "median": 273563648.0,
+        "max": 276844544,
+        "p95": 275746816.0
+      },
+      "rollovers": 8,
+      "max_buffer_samples": 323984,
+      "max_buffer_seconds": 20.249,
+      "inference_job_queue": 0,
+      "text_updates": 123,
+      "browser_render_ack_count": 123,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 123,
+        "median": 0.14230599999427795,
+        "max": 0.2893045999808237,
+        "p95": 0.26406736002536485
+      },
+      "error": null,
+      "cancelled": false,
+      "final_text": "Anda juga bisa mempunyai lokam panduan yang mengandung secumulakacil element non-lokam seperti karpon Anda juga bisa mempunyai lokam panduan yang mengandung secumulakan cil element non lo kam seperti karbon Anda cukup bisa mempunyai lo kam penduan yang mengandung secumulakan cil element non lo kam seperti karbon Anda juga bisa mempunyai lokam panduan yang mengandung secumulakacil element non-lokam seperti karpon. Anda juga bisa mempunyai lokam dan duan yang mengandung secumulah kecil element non lokam seperti karpon. Anda juga bisa mempunyai lokam penduan yang mengandung secumulah kecil element non lokam seperti karpon. Anda juga bisa mempunyai lokampan duan yang mengandung secumlakacil element non lokam seperti karpon. Anda juga Semem punya ilo kampan-duan yang mengandung secumulakacil element non lokam seperti karpon Anda juga bisa mempunyai ilo kampan-duan yang mengandung secumulakacil element non lokam dan mencoba karton Anda juga bisa mempunyai lo kampanjuan yang mengandung secumulakacil element non lo kamp seperti karton Anda juga bisa mempunyai lo kampan2 yang mengandung secumulakacil element non lo kamp seperti karpon. Anda juga bisa mempunyai lo kampan2 yang mengandung secumulakacil element non lo kemb, seperti karpun.",
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1
+    },
+    {
+      "log": "results/step2/15ae2094425848759bd8e9cd20eb8603.jsonl",
+      "audio_seconds": 13.352,
+      "elapsed_seconds": 14.233204899996053,
+      "source": "browser_paced_public_fixture",
+      "first_text_from_session_start_s": 3.55501589999767,
+      "first_text_from_energy_onset_s": 2.147001899953466,
+      "inference_seconds": {
+        "n": 12,
+        "median": 0.6473963000171352,
+        "max": 0.7099951999844052,
+        "individual": [
+          0.6459713000222109,
+          0.5580835999571718,
+          0.6132814000011422,
+          0.645694500009995,
+          0.6410378000000492,
+          0.7099951999844052,
+          0.6559496999834664,
+          0.6722316999803297,
+          0.6488213000120595,
+          0.6344290000270121,
+          0.6654297999921255,
+          0.6574064000160433
+        ]
+      },
+      "server_emission_interval_s": {
+        "n": 11,
+        "median": 0.996811399993021,
+        "max": 1.0670825999695808,
+        "individual": [
+          0.9121152000152506,
+          1.0562857000040822,
+          1.0298623000271618,
+          0.996811399993021,
+          1.0670825999695808,
+          0.9492833000258543,
+          1.0122702000080608,
+          0.978917200001888,
+          0.9848660999559797,
+          1.0327247999957763,
+          0.6579168000025675
+        ]
+      },
+      "processing_lag_s": {
+        "n": 12,
+        "median": 0.5,
+        "max": 0.603,
+        "individual": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.603,
+          0.0
+        ]
+      },
+      "first_20_lag_median_s": 0.5,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 54,
+      "audio_sample_count": 213632,
+      "chunk_arrival_span_s": 13.109047600009944,
+      "streaming_compute_load": 0.5803124400828348,
+      "rss_bytes": {
+        "n": 12,
+        "median": 268838912.0,
+        "max": 269914112,
+        "individual": [
+          266416128,
+          267911168,
+          268398592,
+          268161024,
+          269152256,
+          268435456,
+          268525568,
+          269213696,
+          269914112,
+          269242368,
+          269307904,
+          269307904
+        ]
+      },
+      "rollovers": 0,
+      "max_buffer_samples": 213632,
+      "max_buffer_seconds": 13.352,
+      "inference_job_queue": 0,
+      "text_updates": 12,
+      "browser_render_ack_count": 12,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 12,
+        "median": 0.09090300000389107,
+        "max": 0.19080580002628267,
+        "individual": [
+          0.10514570004306734,
+          0.19080580002628267,
+          0.11348669999279082,
+          0.10206589999143034,
+          0.08751919999485835,
+          0.03844420000677928,
+          0.07037889998173341,
+          0.07565979997161776,
+          0.07934719999320805,
+          0.09428680001292378,
+          0.07967990002362058,
+          0.15459610003745183
+        ]
+      },
+      "error": null,
+      "cancelled": false,
+      "final_text": "Anda juga bisa mempunyai lokam penduan yang mengandung secumulakan cil element non lokam seperti karpon Anda juga bisa mempunyai lok",
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1
+    },
+    {
+      "log": "results/step2/43e3def92c9c4dd99d0bb95bb9d1fd56.jsonl",
+      "audio_seconds": 5.0,
+      "elapsed_seconds": 5.00417379999999,
+      "source": "synthetic_silence",
+      "first_text_from_session_start_s": null,
+      "first_text_from_energy_onset_s": null,
+      "inference_seconds": {
+        "n": 0
+      },
+      "server_emission_interval_s": {
+        "n": 0
+      },
+      "processing_lag_s": {
+        "n": 4,
+        "median": 0.0,
+        "max": 0.0,
+        "individual": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "first_20_lag_median_s": 0.0,
+      "last_20_lag_median_s": 0.0,
+      "chunk_count": 20,
+      "audio_sample_count": 80000,
+      "chunk_arrival_span_s": 4.750109300017357,
+      "streaming_compute_load": 0.0,
+      "rss_bytes": {
+        "n": 4,
+        "median": 138653696.0,
+        "max": 139173888,
+        "individual": [
+          137883648,
+          138207232,
+          139100160,
+          139173888
+        ]
+      },
+      "rollovers": 0,
+      "max_buffer_samples": 80000,
+      "max_buffer_seconds": 5.0,
+      "inference_job_queue": 0,
+      "text_updates": 0,
+      "browser_render_ack_count": 0,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 0
+      },
+      "error": null,
+      "cancelled": false,
+      "final_text": "",
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1
+    },
+    {
+      "log": "results/step2/c88b787572584c4bbe9be199128c37d8.jsonl",
+      "audio_seconds": 9.4213125,
+      "elapsed_seconds": 10.804973200021777,
+      "source": "browser_paced_public_fixture",
+      "first_text_from_session_start_s": 3.6975404000259005,
+      "first_text_from_energy_onset_s": 2.288868799980264,
+      "inference_seconds": {
+        "n": 8,
+        "median": 0.8759217000333592,
+        "max": 0.9436581999761984,
+        "individual": [
+          0.778548700036481,
+          0.84157100005541,
+          0.8297258000238799,
+          0.8280175999971107,
+          0.9345260999980383,
+          0.9102724000113085,
+          0.9436581999761984,
+          0.9401720000314526
+        ]
+      },
+      "server_emission_interval_s": {
+        "n": 7,
+        "median": 0.9976577999768779,
+        "max": 1.1084333999897353,
+        "individual": [
+          1.0639981999993324,
+          0.9888267000205815,
+          0.9976577999768779,
+          1.1084333999897353,
+          0.9751259000040591,
+          1.0324046000023372,
+          0.9408889000187628
+        ]
+      },
+      "processing_lag_s": {
+        "n": 8,
+        "median": 0.75,
+        "max": 0.75,
+        "individual": [
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.75,
+          0.6723125,
+          0.0
+        ]
+      },
+      "first_20_lag_median_s": 0.75,
+      "last_20_lag_median_s": 0.75,
+      "chunk_count": 38,
+      "audio_sample_count": 150741,
+      "chunk_arrival_span_s": 9.161406299972441,
+      "streaming_compute_load": 0.7436853198670439,
+      "rss_bytes": {
+        "n": 8,
+        "median": 270880768.0,
+        "max": 271941632,
+        "individual": [
+          270598144,
+          270688256,
+          270880768,
+          270876672,
+          270880768,
+          271278080,
+          271941632,
+          271937536
+        ]
+      },
+      "rollovers": 0,
+      "max_buffer_samples": 150741,
+      "max_buffer_seconds": 9.4213125,
+      "inference_job_queue": 0,
+      "text_updates": 8,
+      "browser_render_ack_count": 8,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 8,
+        "median": 0.09909760000300594,
+        "max": 0.16509010002482682,
+        "individual": [
+          0.16509010002482682,
+          0.10007200000109151,
+          0.09812320000492036,
+          0.11357749998569489,
+          0.03863630001433194,
+          0.09673960000509396,
+          0.09735110000474378,
+          0.15702039998723194
+        ]
+      },
+      "error": null,
+      "cancelled": false,
+      "final_text": "Anda juga bisa mempunyai lokam penduan yang mengandung secumulakan cil element non-lokam seperti karpon.",
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1
+    },
+    {
+      "log": "results/step2/c8033b768d334fbaa2fef615944e5053.jsonl",
+      "audio_seconds": 9.4213125,
+      "elapsed_seconds": 10.169121099985205,
+      "source": "browser_paced_public_fixture",
+      "first_text_from_session_start_s": 3.491560499998741,
+      "first_text_from_energy_onset_s": 2.11180479999166,
+      "inference_seconds": {
+        "n": 8,
+        "median": 0.6413647500157822,
+        "max": 0.6802778000128455,
+        "individual": [
+          0.6115216999896802,
+          0.6022174999816343,
+          0.6625355000142008,
+          0.6446344000287354,
+          0.663045699999202,
+          0.638095100002829,
+          0.6802778000128455,
+          0.6074584000161849
+        ]
+      },
+      "server_emission_interval_s": {
+        "n": 7,
+        "median": 0.9924777999985963,
+        "max": 1.059238199959509,
+        "individual": [
+          0.9924777999985963,
+          1.059238199959509,
+          0.9819540000171401,
+          1.018737600010354,
+          0.9735596000100486,
+          1.0436123000108637,
+          0.6079309999477118
+        ]
+      },
+      "processing_lag_s": {
+        "n": 8,
+        "median": 0.5,
+        "max": 0.6723125,
+        "individual": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.6723125,
+          0.0
+        ]
+      },
+      "first_20_lag_median_s": 0.5,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 38,
+      "audio_sample_count": 150741,
+      "chunk_arrival_span_s": 9.160732699965592,
+      "streaming_compute_load": 0.5423645696971958,
+      "rss_bytes": {
+        "n": 8,
+        "median": 268251136.0,
+        "max": 269008896,
+        "individual": [
+          266006528,
+          266858496,
+          267964416,
+          268587008,
+          267513856,
+          269008896,
+          268537856,
+          268578816
+        ]
+      },
+      "rollovers": 0,
+      "max_buffer_samples": 150741,
+      "max_buffer_seconds": 9.4213125,
+      "inference_job_queue": 0,
+      "text_updates": 8,
+      "browser_render_ack_count": 8,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 8,
+        "median": 0.06686975000775419,
+        "max": 0.26821680000284687,
+        "individual": [
+          0.03513779997592792,
+          0.05911410000408068,
+          0.26821680000284687,
+          0.06793870002729818,
+          0.06573749997187406,
+          0.09236259997123852,
+          0.0658007999882102,
+          0.225618900032714
+        ]
+      },
+      "error": null,
+      "cancelled": false,
+      "final_text": "Anda juga bisa mempunyai lokam penduan yang mengandung secumulakan cil element non-lokam seperti karpon.",
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1
+    },
+    {
+      "log": "results/step2/5a09f5de2e2e4189ae0e3844138e3998.jsonl",
+      "audio_seconds": 9.4213125,
+      "elapsed_seconds": 10.184828800032847,
+      "source": "browser_paced_public_fixture",
+      "first_text_from_session_start_s": 3.499793299997691,
+      "first_text_from_energy_onset_s": 2.130274199997075,
+      "inference_seconds": {
+        "n": 8,
+        "median": 0.6412959000153933,
+        "max": 0.6908830999745987,
+        "individual": [
+          0.6274336000205949,
+          0.610511899983976,
+          0.6240892999921925,
+          0.6444704000023194,
+          0.6908830999745987,
+          0.6789820000412874,
+          0.674667400016915,
+          0.6381214000284672
+        ]
+      },
+      "server_emission_interval_s": {
+        "n": 7,
+        "median": 0.9940235000103712,
+        "max": 1.0600462000002153,
+        "individual": [
+          0.9831190999830142,
+          1.011034400027711,
+          1.0193563000066206,
+          1.0600462000002153,
+          0.978468699962832,
+          0.9940235000103712,
+          0.6389354999992065
+        ]
+      },
+      "processing_lag_s": {
+        "n": 8,
+        "median": 0.5,
+        "max": 0.6723125,
+        "individual": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.6723125,
+          0.0
+        ]
+      },
+      "first_20_lag_median_s": 0.5,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 38,
+      "audio_sample_count": 150741,
+      "chunk_arrival_span_s": 9.163470199971925,
+      "streaming_compute_load": 0.5507894043489536,
+      "rss_bytes": {
+        "n": 8,
+        "median": 269484032.0,
+        "max": 270405632,
+        "individual": [
+          269545472,
+          269422592,
+          269447168,
+          268484608,
+          269520896,
+          270405632,
+          270102528,
+          268509184
+        ]
+      },
+      "rollovers": 0,
+      "max_buffer_samples": 150741,
+      "max_buffer_seconds": 9.4213125,
+      "inference_job_queue": 0,
+      "text_updates": 8,
+      "browser_render_ack_count": 8,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 8,
+        "median": 0.08815695001976565,
+        "max": 0.26699589996133,
+        "individual": [
+          0.2572861000080593,
+          0.03904360003070906,
+          0.02813849999802187,
+          0.025319900014437735,
+          0.26699589996133,
+          0.03688910003984347,
+          0.2597085000015795,
+          0.13727030000882223
+        ]
+      },
+      "error": null,
+      "cancelled": false,
+      "final_text": "Anda juga bisa mempunyai lokam penduan yang mengandung secumulakan cil element non-lokam seperti karpon.",
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1
+    },
+    {
+      "log": "results/step2/9983bd03fb4a4a41b2c908ad84911f90.jsonl",
+      "audio_seconds": 9.4213125,
+      "elapsed_seconds": 10.028166799980681,
+      "source": "browser_paced_public_fixture",
+      "first_text_from_session_start_s": 3.451099800004158,
+      "first_text_from_energy_onset_s": 2.0433792999829166,
+      "inference_seconds": {
+        "n": 8,
+        "median": 0.5045165500196163,
+        "max": 0.5934258999768645,
+        "individual": [
+          0.5429662999813445,
+          0.5030740000074729,
+          0.4698071999591775,
+          0.5410482999868691,
+          0.5059591000317596,
+          0.4708484000293538,
+          0.5934258999768645,
+          0.4493454999756068
+        ]
+      },
+      "server_emission_interval_s": {
+        "n": 7,
+        "median": 0.9658834000001661,
+        "max": 1.1229176000342704,
+        "individual": [
+          0.9594039999647066,
+          0.968283900001552,
+          1.0709774999995716,
+          0.9619330000132322,
+          0.9658834000001661,
+          1.1229176000342704,
+          0.5276263999985531
+        ]
+      },
+      "processing_lag_s": {
+        "n": 8,
+        "median": 0.5,
+        "max": 0.5,
+        "individual": [
+          0.5,
+          0.5,
+          0.25,
+          0.5,
+          0.5,
+          0.25,
+          0.5,
+          0.0
+        ]
+      },
+      "first_20_lag_median_s": 0.5,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 38,
+      "audio_sample_count": 150741,
+      "chunk_arrival_span_s": 9.154582399991341,
+      "streaming_compute_load": 0.43268649670079923,
+      "rss_bytes": {
+        "n": 8,
+        "median": 262514688.0,
+        "max": 267718656,
+        "individual": [
+          265412608,
+          267403264,
+          267718656,
+          261652480,
+          260702208,
+          260616192,
+          261287936,
+          263376896
+        ]
+      },
+      "rollovers": 0,
+      "max_buffer_samples": 150741,
+      "max_buffer_seconds": 9.4213125,
+      "inference_job_queue": 0,
+      "text_updates": 8,
+      "browser_render_ack_count": 8,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 8,
+        "median": 0.1940621500252746,
+        "max": 0.25554740004008636,
+        "individual": [
+          0.18227280001156032,
+          0.20688900002278388,
+          0.2549525000504218,
+          0.16683260002173483,
+          0.2058515000389889,
+          0.25554740004008636,
+          0.10039969999343157,
+          0.10478669998701662
+        ]
+      },
+      "error": null,
+      "cancelled": false,
+      "final_text": "Anda juga bisa mempunyai lokam penduan yang mengandung secumulakan cil element non-lokam seperti karpon.",
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1
+    }
+  ],
+  "microphone_numeric_summaries": [
+    {
+      "log": "results/step2/6959a42b9cd24561b776873e1b005f71.jsonl",
+      "audio_seconds": 22.4906875,
+      "elapsed_seconds": 24.646386999986134,
+      "source": "browser_microphone",
+      "first_text_from_session_start_s": 3.4998185000149533,
+      "first_text_from_energy_onset_s": 2.837230900011491,
+      "inference_seconds": {
+        "n": 22,
+        "median": 0.6517001999600325,
+        "max": 1.6033649999881163,
+        "p95": 0.812832245026948
+      },
+      "server_emission_interval_s": {
+        "n": 21,
+        "median": 1.009975900000427,
+        "max": 1.9215693000005558,
+        "p95": 1.154425699962303
+      },
+      "processing_lag_s": {
+        "n": 22,
+        "median": 0.5,
+        "max": 1.249,
+        "p95": 0.75
+      },
+      "first_20_lag_median_s": 0.5,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 90,
+      "audio_sample_count": 359851,
+      "chunk_arrival_span_s": 22.241451399982907,
+      "streaming_compute_load": 0.6855413913031545,
+      "rss_bytes": {
+        "n": 22,
+        "median": 271687680.0,
+        "max": 273657856,
+        "p95": 273625497.6
+      },
+      "rollovers": 1,
+      "max_buffer_samples": 307984,
+      "max_buffer_seconds": 19.249,
+      "inference_job_queue": 0,
+      "text_updates": 22,
+      "browser_render_ack_count": 22,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 22,
+        "median": 0.13211875001434237,
+        "max": 0.24629909999202937,
+        "p95": 0.22742660499352496
+      },
+      "error": null,
+      "cancelled": false,
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1,
+      "privacy": "Transcript omitted; original raw log remains local and is not included in this evidence bundle"
+    },
+    {
+      "log": "results/step2/0bea7c0670b84605ad8df1d95deeefb7.jsonl",
+      "audio_seconds": 60.499,
+      "elapsed_seconds": 62.89807470003143,
+      "source": "browser_microphone",
+      "first_text_from_session_start_s": 5.5999033999978565,
+      "first_text_from_energy_onset_s": 4.9445306999841705,
+      "inference_seconds": {
+        "n": 54,
+        "median": 0.6459678999963216,
+        "max": 2.639943999995012,
+        "p95": 1.7148182100238043
+      },
+      "server_emission_interval_s": {
+        "n": 52,
+        "median": 1.0472695499775,
+        "max": 2.9965643999748863,
+        "p95": 1.999288854980841
+      },
+      "processing_lag_s": {
+        "n": 54,
+        "median": 0.5,
+        "max": 2.5,
+        "p95": 1.8371499999999985
+      },
+      "first_20_lag_median_s": 0.5,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 242,
+      "audio_sample_count": 967984,
+      "chunk_arrival_span_s": 62.35503079998307,
+      "streaming_compute_load": 0.6969895700762815,
+      "rss_bytes": {
+        "n": 54,
+        "median": 274323456.0,
+        "max": 276721664,
+        "p95": 276165222.4
+      },
+      "rollovers": 3,
+      "max_buffer_samples": 319984,
+      "max_buffer_seconds": 19.999,
+      "inference_job_queue": 0,
+      "text_updates": 53,
+      "browser_render_ack_count": 53,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 53,
+        "median": 0.14675069996155798,
+        "max": 0.2698649000376463,
+        "p95": 0.26016110001364723
+      },
+      "error": null,
+      "cancelled": true,
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 0,
+      "final_flush_count": 0,
+      "privacy": "Transcript omitted; original raw log remains local and is not included in this evidence bundle"
+    },
+    {
+      "log": "results/step2/c2984588c34041ed811ad83b730f689b.jsonl",
+      "audio_seconds": 21.8613125,
+      "elapsed_seconds": 22.80786259996239,
+      "source": "browser_microphone",
+      "first_text_from_session_start_s": 3.469111599959433,
+      "first_text_from_energy_onset_s": 2.8028171999612823,
+      "inference_seconds": {
+        "n": 21,
+        "median": 0.638691799947992,
+        "max": 0.7644220000365749,
+        "p95": 0.7642559999949299
+      },
+      "server_emission_interval_s": {
+        "n": 20,
+        "median": 1.0112949000031222,
+        "max": 1.1010599000146613,
+        "p95": 1.0560574499657378
+      },
+      "processing_lag_s": {
+        "n": 21,
+        "median": 0.5,
+        "max": 1.499,
+        "p95": 0.75
+      },
+      "first_20_lag_median_s": 0.5,
+      "last_20_lag_median_s": 0.5,
+      "chunk_count": 88,
+      "audio_sample_count": 349781,
+      "chunk_arrival_span_s": 21.61207790003391,
+      "streaming_compute_load": 0.6112813263212463,
+      "rss_bytes": {
+        "n": 21,
+        "median": 275943424.0,
+        "max": 277561344,
+        "p95": 277544960.0
+      },
+      "rollovers": 1,
+      "max_buffer_samples": 311984,
+      "max_buffer_seconds": 19.499,
+      "inference_job_queue": 0,
+      "text_updates": 21,
+      "browser_render_ack_count": 21,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 21,
+        "median": 0.10641319997375831,
+        "max": 0.1594090000144206,
+        "p95": 0.14554900000803173
+      },
+      "error": null,
+      "cancelled": false,
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 1,
+      "final_flush_count": 1,
+      "privacy": "Transcript omitted; original raw log remains local and is not included in this evidence bundle"
+    },
+    {
+      "log": "results/step2/c99c38a9290d47b29394aa9d6ed3c46c.jsonl",
+      "audio_seconds": 0.0,
+      "elapsed_seconds": 0.04261520004365593,
+      "source": "browser_microphone",
+      "first_text_from_session_start_s": null,
+      "first_text_from_energy_onset_s": null,
+      "inference_seconds": {
+        "n": 0
+      },
+      "server_emission_interval_s": {
+        "n": 0
+      },
+      "processing_lag_s": {
+        "n": 0
+      },
+      "first_20_lag_median_s": null,
+      "last_20_lag_median_s": null,
+      "chunk_count": 0,
+      "audio_sample_count": 0,
+      "chunk_arrival_span_s": null,
+      "streaming_compute_load": null,
+      "rss_bytes": {
+        "n": 0
+      },
+      "rollovers": 0,
+      "max_buffer_samples": 0,
+      "max_buffer_seconds": 0.0,
+      "inference_job_queue": 0,
+      "text_updates": 0,
+      "browser_render_ack_count": 0,
+      "browser_emission_to_ack_upper_bound_s": {
+        "n": 0
+      },
+      "error": "Browser microphone: Cannot read properties of null (reading 'port')",
+      "cancelled": true,
+      "notes": "Server emission is not visible UI latency. Browser ack after requestAnimationFrame is only a rendering opportunity/round-trip upper bound. Replays are not real microphone verification.",
+      "stop_received_count": 0,
+      "final_flush_count": 0,
+      "privacy": "Transcript omitted; original raw log remains local and is not included in this evidence bundle"
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "cpu": "13th Gen Intel(R) Core(TM) i5-13420H",
+    "logical_cpu_count": 12,
+    "physical_cores": 8,
+    "ram_bytes": 16857817088,
+    "cuda_devices": 0,
+    "cpu_compute_types": [
+      "float32",
+      "int16",
+      "int8",
+      "int8_float32"
+    ],
+    "packages": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "av": "19.0.2",
+      "soundfile": "0.14.0",
+      "psutil": "7.2.2",
+      "faster-whisper": "1.2.1",
+      "ctranslate2": "4.8.3",
+      "gradio": "6.30.0",
+      "fastapi": "0.162.0",
+      "uvicorn": "0.54.0",
+      "websockets": "17.3"
+    }
+  },
+  "focused_checks": {
+    "python_test_cases": 11,
+    "javascript_regression_cases": 2,
+    "outcome": "passed",
+    "logs": [
+      "results/step2/focused_checks.txt",
+      "results/step2/client_lifecycle_checks.txt"
+    ]
+  }
+}

@@ -1,6 +1,9 @@
 -r core.txt
-# Add compatible, verified version constraints before installation.
-torch
-transformers
-gradio
-# faster-whisper is an optional export/runtime candidate; adopt only after parity checks.
+# Step 2 local unmodified pretrained Tiny feasibility runtime.
+faster-whisper==1.2.1
+ctranslate2==4.8.3
+gradio==6.30.0
+psutil==7.2.2
+uvicorn==0.54.0
+websockets==17.3
+# Training dependencies remain separate and are not installed for this prototype.

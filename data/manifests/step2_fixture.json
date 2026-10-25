@@ -1,0 +1,20 @@
+{
+  "dataset": "google/fleurs",
+  "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+  "config": "id_id",
+  "split": "train",
+  "row_id": "1185",
+  "archive_member": "train/10001176200525981995.wav",
+  "compressed_bytes_read": 501760,
+  "purpose": "Single public paced replay fixture, not a recognition benchmark or independent test set",
+  "license": "CC BY 4.0",
+  "license_url": "https://huggingface.co/datasets/google/fleurs",
+  "source": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/audio/train.tar.gz",
+  "reference": "Anda juga bisa mempunyai logam paduan yang mengandung sejumlah kecil elemen non-logam seperti karbon.",
+  "path": "data/fixtures/fleurs_id_sample.wav",
+  "samplerate": 16000,
+  "frames": 150720,
+  "duration": 9.42,
+  "channels": 1,
+  "sha256": "d948be05770a2169d2212a3706603ccb9fb69975f23403239145270fcfa922a0"
+}

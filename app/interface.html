@@ -1,0 +1,19 @@
+<section style="max-width: 860px; margin: 1rem auto; font-family: system-ui; line-height: 1.6">
+  <h1>DengerKelas</h1>
+  <p>Caption bahasa Indonesia di komputer ini. Prototipe dengan Whisper Tiny pretrained, tanpa fine-tuning.</p>
+  <p><button id="dk-start">Mulai mikrofon</button> <button id="dk-stop" disabled>Stop dan selesaikan</button> <button id="dk-reset">Reset sesi</button></p>
+  <p role="status" aria-live="polite" id="dk-status">Menghubungkan ke aplikasi lokal…</p>
+  <p id="dk-timing">Belum ada audio.</p>
+  <h2>Riwayat transkripsi</h2>
+  <p style="white-space: pre-wrap; min-height: 5rem; border: 1px solid #aaa; padding: 1rem" id="dk-history"></p>
+  <h2>Teks yang sedang diperbarui</h2>
+  <p style="white-space: pre-wrap; min-height: 3rem; border: 1px solid #aaa; padding: 1rem" id="dk-partial"></p>
+  <p>Teks aktif dapat berubah. Riwayat mengikuti batas jendela audio; ini bukan jaminan bahwa kata benar.</p>
+  <details><summary>Panel pengembangan</summary>
+    <p>Replay memakai satu sampel publik FLEURS Indonesia. Audio dikirim sesuai waktu sebenarnya melalui jalur yang sama. Ini tidak memverifikasi mikrofon Anda.</p>
+    <button id="dk-replay">Replay sampel singkat</button>
+    <button id="dk-long">Replay berulang 125 detik</button>
+    <p id="dk-session"></p>
+    <p>Satu sesi maksimum 5 menit. RMS gate 0,003 adalah heuristik energi, bukan VAD terlatih. Log timing disimpan lokal di results/step2/.</p>
+  </details>
+</section>
