@@ -1,0 +1,54 @@
+[
+  {
+    "recording_id": "fleurs:id_id:train:10001176200525981995",
+    "split": "train",
+    "applied": true,
+    "requested_snr_db": 5.0,
+    "measured_snr_db": 5.0,
+    "noise_gain": 3.1836453360406236,
+    "common_gain": 1.0,
+    "peak": 0.2701934576034546,
+    "component_measured_snr_db": 5.0,
+    "same_seed_bitwise_equal": true,
+    "target_unchanged": true
+  },
+  {
+    "recording_id": "fleurs:id_id:train:10001176200525981995",
+    "split": "train",
+    "applied": true,
+    "requested_snr_db": 15.0,
+    "measured_snr_db": 15.0,
+    "noise_gain": 1.0117234443411802,
+    "common_gain": 1.0,
+    "peak": 0.27084100246429443,
+    "component_measured_snr_db": 15.0,
+    "same_seed_bitwise_equal": true,
+    "target_unchanged": true
+  },
+  {
+    "recording_id": "fleurs:id_id:dev:10013545268133211816",
+    "split": "validation",
+    "applied": true,
+    "requested_snr_db": 5.0,
+    "measured_snr_db": 5.000000000000001,
+    "noise_gain": 3.75084796467663,
+    "common_gain": 1.0,
+    "peak": 0.09294325113296509,
+    "component_measured_snr_db": 5.000000000000001,
+    "same_seed_bitwise_equal": true,
+    "target_unchanged": true
+  },
+  {
+    "recording_id": "fleurs:id_id:dev:10013545268133211816",
+    "split": "validation",
+    "applied": true,
+    "requested_snr_db": 15.0,
+    "measured_snr_db": 14.999999999999998,
+    "noise_gain": 1.71081789239948,
+    "common_gain": 1.0,
+    "peak": 0.09693178534507751,
+    "component_measured_snr_db": 14.999999999999998,
+    "same_seed_bitwise_equal": true,
+    "target_unchanged": true
+  }
+]

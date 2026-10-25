@@ -1,0 +1,193 @@
+{
+  "train": {
+    "before_count": 2579,
+    "after_count": 2571,
+    "before_duration_seconds": 32736.84,
+    "after_duration_seconds": 32460.66,
+    "exclusion_reasons": {
+      "longer_than_single_window": 8
+    },
+    "flag_counts": {
+      "possible_encoding_artifact_review_only": 34,
+      "possible_clipping": 32
+    },
+    "duration_seconds": {
+      "n": 2579,
+      "min": 3.48,
+      "p05": 6.84,
+      "median": 12.06,
+      "p95": 20.58,
+      "max": 43.8,
+      "mean": 12.693617681271812,
+      "sum": 32736.840000000004
+    },
+    "target_tokens": {
+      "n": 2579,
+      "min": 15.0,
+      "p05": 27.0,
+      "median": 45.0,
+      "p95": 72.0,
+      "max": 106.0,
+      "mean": 47.0306320279178,
+      "sum": 121292.0
+    },
+    "text_characters": {
+      "n": 2579,
+      "min": 35.0,
+      "p05": 70.0,
+      "median": 132.0,
+      "p95": 220.0999999999999,
+      "max": 367.0,
+      "mean": 135.7828615742536,
+      "sum": 350184.0
+    },
+    "text_words": {
+      "n": 2579,
+      "min": 4.0,
+      "p05": 10.0,
+      "median": 18.0,
+      "p95": 30.0,
+      "max": 49.0,
+      "mean": 18.950756107018226,
+      "sum": 48874.0
+    },
+    "sample_rates": {
+      "16000": 2579
+    },
+    "channels": {
+      "1": 2579
+    },
+    "source_gender": {
+      "MALE": 1081,
+      "FEMALE": 1498
+    },
+    "unique_source_sentence_ids": 1461,
+    "unique_source_filenames": 2579
+  },
+  "validation": {
+    "before_count": 350,
+    "after_count": 350,
+    "before_duration_seconds": 4173.12,
+    "after_duration_seconds": 4173.12,
+    "exclusion_reasons": {},
+    "flag_counts": {
+      "possible_encoding_artifact_review_only": 5,
+      "possible_clipping": 3
+    },
+    "duration_seconds": {
+      "n": 350,
+      "min": 4.86,
+      "p05": 6.747,
+      "median": 11.370000000000001,
+      "p95": 18.78,
+      "max": 26.04,
+      "mean": 11.9232,
+      "sum": 4173.12
+    },
+    "target_tokens": {
+      "n": 350,
+      "min": 19.0,
+      "p05": 24.45,
+      "median": 46.0,
+      "p95": 72.0,
+      "max": 91.0,
+      "mean": 46.31428571428572,
+      "sum": 16210.0
+    },
+    "text_characters": {
+      "n": 350,
+      "min": 47.0,
+      "p05": 65.0,
+      "median": 130.0,
+      "p95": 223.10000000000002,
+      "max": 295.0,
+      "mean": 133.5457142857143,
+      "sum": 46741.0
+    },
+    "text_words": {
+      "n": 350,
+      "min": 7.0,
+      "p05": 9.0,
+      "median": 18.0,
+      "p95": 29.0,
+      "max": 45.0,
+      "mean": 18.545714285714286,
+      "sum": 6491.0
+    },
+    "sample_rates": {
+      "16000": 350
+    },
+    "channels": {
+      "1": 350
+    },
+    "source_gender": {
+      "MALE": 350
+    },
+    "unique_source_sentence_ids": 147,
+    "unique_source_filenames": 350
+  },
+  "test": {
+    "before_count": 687,
+    "after_count": 684,
+    "before_duration_seconds": 8515.44,
+    "after_duration_seconds": 8410.26,
+    "exclusion_reasons": {
+      "longer_than_single_window": 3
+    },
+    "flag_counts": {
+      "possible_encoding_artifact_review_only": 6,
+      "possible_clipping": 3
+    },
+    "duration_seconds": {
+      "n": 687,
+      "min": 4.44,
+      "p05": 6.72,
+      "median": 11.64,
+      "p95": 20.645999999999987,
+      "max": 41.28,
+      "mean": 12.395109170305677,
+      "sum": 8515.44
+    },
+    "target_tokens": {
+      "n": 687,
+      "min": 20.0,
+      "p05": 26.0,
+      "median": 46.0,
+      "p95": 75.0,
+      "max": 109.0,
+      "mean": 48.12663755458515,
+      "sum": 33063.0
+    },
+    "text_characters": {
+      "n": 687,
+      "min": 43.0,
+      "p05": 69.0,
+      "median": 131.0,
+      "p95": 231.0,
+      "max": 353.0,
+      "mean": 139.34788937409024,
+      "sum": 95732.0
+    },
+    "text_words": {
+      "n": 687,
+      "min": 7.0,
+      "p05": 10.0,
+      "median": 18.0,
+      "p95": 32.0,
+      "max": 47.0,
+      "mean": 19.461426491994178,
+      "sum": 13370.0
+    },
+    "sample_rates": {
+      "16000": 687
+    },
+    "channels": {
+      "1": 687
+    },
+    "source_gender": {
+      "MALE": 687
+    },
+    "unique_source_sentence_ids": 328,
+    "unique_source_filenames": 687
+  }
+}

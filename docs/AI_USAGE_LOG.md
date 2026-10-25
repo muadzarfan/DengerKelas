@@ -19,6 +19,19 @@ This log begins with the Step 1 planning/setup assistance. Update it during deve
 | Decisions after evidence | Replaced blocked pip-less runtime with isolated Python 3.12; retained old environment. Used explicit PCM bridge for chunk/Stop ordering; kept CPU INT8/Tiny. Fixed a rapid-restart AudioContext race found in real microphone logs. Kept failed checks documented. |
 | Scope and integrity | No fine-tuning, formal dataset acquisition, invented WER/noise results, generated user feedback, or five-user study. Microphone text is excluded from public evidence. Pass is limited to observed feasibility conditions. |
 
+## Step 3 assistance — 2026-10-25
+
+| Field | Record |
+|---|---|
+| Tool | OpenAI Codex; official Hugging Face/Zenodo web/API metadata; local Python/Git tools; pypdf for the source DEMAND document; Matplotlib |
+| Purpose | Execute actual dataset acquisition, audit, preprocessing and reproducible noise preparation in the existing workspace |
+| Instruction summary | Use official FLEURS Indonesian splits and OOFFICE/OHALLWAY/PCAFETER only; acquire automatically with integrity/reuse; audit all data, preserve source labels/splits; prepare Whisper features/labels and fixed noise definitions; verify and document without training or test tuning |
+| Outputs used | `src/data/`, `configs/data_*.json`, `requirements/data.txt` and actual installed lock, focused data tests, public source/recording/noise/recipe manifests, dataset/license/preparation documentation, local `results/step3/` and public `docs/evidence/step3/` snapshots |
+| Agent verification | All requested official files passed checksums; all source recordings were decoded/audited; IDs/leakage/filters, clean retention and noise roles checked; train/validation features/labels and real component SNR verified; focused unit checks and pip check passed; full rerun produced identical manifest bytes; distribution plot visually inspected |
+| Decisions after observed failures | Recovered HTTP 502 and partial/checksum-failed downloads with bounded retries/resume. Corrected literal TSV quote parsing. Train/validation text inspection led to v2 holding suspected mojibake without guessing repaired names; retained initial audit evidence. Preserved the DEMAND license discrepancy and source gender imbalance. |
+| Student verification | Student review/understanding of code, quality exclusions, source attribution and academic claims is still required. No student listening review or semantic transcript confirmation has been reported for Step 3. Numeric audit and tokenizer roundtrip are not substitutes. |
+| Scope and integrity | No fine-tuning, model forward pass, ASR WER/CER benchmark, checkpoint selection, test tuning/listening/feature smoke, fabricated feedback or five-user study. Test access was limited to integrity and fixed definitions. Raw data/weights/caches and private Step 2 logs stay outside Git. |
+
 ## Ongoing report fields
 
 For each later AI-assisted contribution, add date, tool/model, purpose, concise prompt summary, output used, exact files/code/report portions affected, how the student verified correctness, changes/rejections after review, and whether any claim or result needs independent evidence. Never use generated text as user feedback or experimental results.

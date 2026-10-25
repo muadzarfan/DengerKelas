@@ -1,0 +1,20 @@
+{
+  "train": {
+    "recipes": 2538,
+    "noisy": 1268,
+    "clean": 1270,
+    "environment": "OOFFICE"
+  },
+  "validation": {
+    "recipes": 690,
+    "noisy": 690,
+    "clean": 0,
+    "environment": "OHALLWAY"
+  },
+  "test": {
+    "recipes": 1356,
+    "noisy": 1356,
+    "clean": 0,
+    "environment": "PCAFETER"
+  }
+}

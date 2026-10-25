@@ -1,0 +1,26 @@
+{
+  "stage": "all",
+  "elapsed_seconds": 51.171809800027404,
+  "previous_manifests_present": true,
+  "previous_hashes": {
+    "demand_noise.jsonl": "3dd1994294c0c771881ef657dae7220f289a473dd84cf8960633c4e6aa2029e7",
+    "fleurs_test.jsonl": "fd1ed9a04660a45e0a059f1d692b29f851a1db3b55f0a781dc5c63dbfc0f36c0",
+    "fleurs_train.jsonl": "7de92a29b4d69772bb29720d5bda2bb24fa295069068177a0b1024f39a2a5562",
+    "fleurs_validation.jsonl": "3734e14549ea630e8e0f0a3c9e9de64c55d6ba07562cfc2302c50a468a7c9e02",
+    "test_noisy_recipes.jsonl": "17941a5bb6aea3eeb8c5b7c90c69e94877e2a73e76d17430b0d20cce3a62b6bb",
+    "train_e2_epoch0_recipes.jsonl": "52718769f615a8bf5e0402a69193b805f29cd8c7605172c5b127f1cb5840154b",
+    "validation_noisy_recipes.jsonl": "ed93785746ed3f3d9d0bfa1292fd4f2035adcf8e32a891f5c9eeef870baad437"
+  },
+  "current_hashes": {
+    "demand_noise.jsonl": "3dd1994294c0c771881ef657dae7220f289a473dd84cf8960633c4e6aa2029e7",
+    "fleurs_test.jsonl": "fd1ed9a04660a45e0a059f1d692b29f851a1db3b55f0a781dc5c63dbfc0f36c0",
+    "fleurs_train.jsonl": "7de92a29b4d69772bb29720d5bda2bb24fa295069068177a0b1024f39a2a5562",
+    "fleurs_validation.jsonl": "3734e14549ea630e8e0f0a3c9e9de64c55d6ba07562cfc2302c50a468a7c9e02",
+    "test_noisy_recipes.jsonl": "17941a5bb6aea3eeb8c5b7c90c69e94877e2a73e76d17430b0d20cce3a62b6bb",
+    "train_e2_epoch0_recipes.jsonl": "52718769f615a8bf5e0402a69193b805f29cd8c7605172c5b127f1cb5840154b",
+    "validation_noisy_recipes.jsonl": "ed93785746ed3f3d9d0bfa1292fd4f2035adcf8e32a891f5c9eeef870baad437"
+  },
+  "same_manifest_bytes": true,
+  "status": "completed",
+  "meaning": "Identical JSONL hashes verify stable IDs, counts, rows, transforms and recipes; no duplicated append output"
+}

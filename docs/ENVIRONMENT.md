@@ -1,6 +1,14 @@
 # Environment inventory and verification
 
-## Step 2 current environment — verified 2026-10-25
+## Step 3 current environment — verified 2026-10-25
+
+The same project `.venv` and Python 3.12.14 were reused. Step 3 added Transformers 5.20.2, tokenizers 0.23.3 and Matplotlib 3.11.2. NumPy 2.5.4, SciPy 1.18.1 and SoundFile 0.14.0 supply waveform reading/resampling, features and numeric checks. `pip check` passed. Actual full installed versions are recorded in `requirements/step3-windows-py312.lock.txt`; the direct preparation requirements are in `requirements/data.txt`.
+
+Whisper Tiny's pinned processor/tokenizer/config loads locally and produces NumPy features without PyTorch. PyTorch and the training runtime have not been installed or verified. The warning that models are unavailable without PyTorch is expected for this stage; no model forward pass, fine-tuning or recognition scoring is claimed. Source archives are fetched directly with Python's standard library; no datasets/Arrow decoder is needed. The existing Step 2 app was not changed.
+
+Executed data verification and rerun evidence: [Step 3 report](STEP3_DATA_PREPARATION.md), [evidence snapshot](evidence/step3/README.md). Raw data and processor files remain project-local and excluded from Git. The distribution figure was rendered using Matplotlib's noninteractive Agg backend and visually inspected. Listening review remains pending.
+
+## Step 2 environment at feasibility checkpoint — verified 2026-10-25
 
 The project `.venv` now runs **Python 3.12.14**. The old pip-less Python 3.14 environment is preserved as `.venv-step1-py314/`, excluded from Git. The available bundled Python 3.12 runtime created the new isolated environment with `--without-pip`, and its pip was used with `--python .venv/Scripts/python.exe` to install pip and deployment dependencies into that environment. No global packages were changed.
 
@@ -13,7 +21,7 @@ The project `.venv` now runs **Python 3.12.14**. The old pip-less Python 3.14 en
 | Deployment | faster-whisper 1.2.1, CTranslate2 4.8.3, Gradio 6.30.0 |
 | Audio/numeric | PyAV 19.0.2, NumPy 2.5.4, SciPy 1.18.1, SoundFile 0.14.0 |
 | Supporting packages | psutil 7.2.2, FastAPI 0.162.0, Uvicorn 0.54.0, websockets 17.3 |
-| pip/dependencies | pip 26.2.2; `pip check` passed; full installed lock in `requirements/step2-windows-py312.lock.txt` |
+| pip/dependencies | pip 26.2.2; `pip check` passed; Step 2 installed lock in `requirements/step2-windows-py312.lock.txt` |
 | Model readiness | Local Tiny artifact loaded; Indonesian decoding completed using CPU INT8 |
 | Offline check | Model load/decode succeeded with Python socket connections denied; no OS network settings changed |
 | Demonstration machine | Student confirmed this is the intended computer and that microphone Start/live text/Stop/Reset passed |

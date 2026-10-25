@@ -8,7 +8,9 @@ Local Indonesian captions for one nearby speaker, one microphone, and one laptop
 
 **Step 2 feasibility: Pass within the tested conditions.** A 125-second browser-paced speech replay produced 123 text updates and eight buffer rollovers. Actual browser microphone sessions were logged, and the student confirmed live text, Stop/final flush, and Reset on the intended demonstration computer. See [findings and limits](docs/STEP2_STREAMING_FEASIBILITY.md).
 
-Training, full dataset preparation, formal WER/CER/noise experiments, agreement-based stabilization and the five-user study remain later work. Neither course assignment is complete. Official assignment forms are still unavailable for direct verification; cross-course administrative questions remain open.
+**Step 3 data preparation: complete and verified.** Indonesian FLEURS official splits and the three assigned DEMAND environments are downloaded, audited and represented in reproducible manifests. See the [dataset card](docs/DATASET_CARD.md), [sources/licenses](docs/DATA_SOURCES_AND_LICENSES.md), [execution report](docs/STEP3_DATA_PREPARATION.md), and [preserved evidence](docs/evidence/step3/README.md). Manual listening review remains pending; semantic audio/label alignment is not established by numeric checks.
+
+Training, formal WER/CER/noise experiments, agreement-based stabilization and the five-user study remain later work. Neither course assignment is complete. Official assignment forms are still unavailable for direct verification; cross-course administrative questions remain open.
 
 ## Launch on this computer
 
@@ -42,6 +44,21 @@ Edit `configs/streaming.json` to configure model/runtime/streaming. Environment 
 
 ## Verification
 
+### Step 3 data pipeline
+
+From this project root, in the existing Python 3.12 environment:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements/data.txt
+.\.venv\Scripts\python.exe -m src.data.prepare --stage all
+.\.venv\Scripts\python.exe -m unittest discover -s tests -p test_data_preparation.py -v
+.\.venv\Scripts\python.exe -m src.data.documentation
+```
+
+The current environment already contains these packages. To recreate the full installed Step 3 environment, use `requirements/step3-windows-py312.lock.txt`. First acquisition needs Internet; verified files are reused. Source revisions, quality rules, SNR and seeds are pinned in `configs/data_sources.json` and `configs/data_preparation.json`. Audio, processors, model weights, caches and local results stay outside Git. This step does not run a model forward pass or fine-tuning.
+
+### Step 2 streaming checks
+
 ```powershell
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 .\.venv\Scripts\python.exe -m src.evaluation.offline_probe
@@ -58,10 +75,11 @@ The development panel also offers short and sustained browser replays. These use
 - `app/`: Gradio UI, Web Audio capture and FastAPI WebSocket transport.
 - `src/streaming/`: stateful resampling, local runtime, bounded audio, one worker and timestamp merge.
 - `src/evaluation/`: provenance, paced replay, summaries, offline probe and inventory.
+- `src/data/`: resumable acquisition, safe extraction, audit, preprocessing, noise recipes, verification and factual documentation.
 - `configs/`, `requirements/`, `tests/`: settings, verified dependencies and focused checks.
 - `data/manifests/`: public provenance; recordings and model weights are excluded.
 - `docs/`, `reports/`: planning, findings, AI log and separate course report outlines.
 
 ## Next checkpoint
 
-Step 3: verify/acquire speech and noise sources, inspect metadata/licenses and official splits, and implement reproducible preprocessing. Keep this already-used training fixture out of independent final evaluation. Step 2 did not start training or the full dataset workflow.
+Step 4: build and verify the training pipeline using the eligible subsets and fixed definitions in Step 3. Install/verify the training framework, then check dataloader/batching/loss before starting experiments. Keep the Step 2 training fixture out of independent final evaluation. No fine-tuning has occurred.

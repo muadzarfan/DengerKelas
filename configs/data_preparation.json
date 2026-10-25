@@ -1,0 +1,22 @@
+{
+  "pipeline_version": "step3-v2",
+  "sample_rate": 16000,
+  "max_audio_seconds": 30.0,
+  "max_target_tokens": 448,
+  "near_zero_rms": 0.000001,
+  "clipping_absolute_threshold": 0.999,
+  "clipping_fraction_warning": 0.001,
+  "suspect_mojibake_policy": "Exclude pending human verification; match Latin-1-looking C2/C3 lead characters followed by U+0080..U+00BF; preserve raw and target text without guessing repairs",
+  "train_text": "Unicode NFC and whitespace collapse only; source raw_transcription preserved",
+  "scoring_text": "Unicode NFKC, casefold, Unicode punctuation to spaces, collapse whitespace; retain digits and words; apply identically to both sides",
+  "leakage": "Preserve official splits; exclude train/validation exact audio overlapping a higher-priority evaluation split; deduplicate exact audio within train only; retain repeated text with distinct audio",
+  "augmentation": {
+    "seed": 20261025,
+    "noise_probability": 0.5,
+    "train_snr_db_min": 5.0,
+    "train_snr_db_max": 20.0,
+    "evaluation_snr_db": [15.0, 5.0],
+    "peak_limit": 0.99,
+    "snr_definition": "10 log10(mean(speech^2)/mean(scaled_noise^2)) over the entire utterance, including pauses"
+  }
+}

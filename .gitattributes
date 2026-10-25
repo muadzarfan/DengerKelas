@@ -1,0 +1,6 @@
+# Step 3 locks and evidence hash exact file bytes. Preserve generated line endings
+# on every platform instead of applying core.autocrlf to these artifacts.
+configs/data_*.json -text
+data/manifests/*.json -text
+data/manifests/*.jsonl -text
+docs/evidence/step3/** -text

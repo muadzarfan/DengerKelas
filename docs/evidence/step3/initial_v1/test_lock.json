@@ -1,0 +1,13 @@
+{
+  "policy": "Final test: integrity audit and fixed recipe generation only; no ASR, tuning, listening inspection or checkpoint selection",
+  "dataset_revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+  "speech_manifest_sha256": "9f217f8006a08f0b8c76d6a65eb91cf3b5d9c261db95b75587af4c9a75b61feb",
+  "fixed_noise_recipes_sha256": "fdbcd76d8826280599f6a8579473bf5ff1736c13e74ac8a94edad20d95693ee6",
+  "preprocessing_config_sha256": "3898c874b5763984539ed23babf472740543eedff01a71a7ebaee3b4f4ce9bff",
+  "noise_environment": "PCAFETER",
+  "noise_channel": 1,
+  "snr_db": [
+    15.0,
+    5.0
+  ]
+}

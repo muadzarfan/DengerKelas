@@ -1,0 +1,32 @@
+{
+  "meaning": "Exact copies of actual local reports; hashes make the snapshot reviewable",
+  "files": {
+    "acquisition.jsonl": "cc24c377b79283443d08c483c2e0f8ec6f560b78ea7adca0d2a154e27b825fa1",
+    "augmentation_checks.json": "7efb0595c29faad73fec127233ac15599e6ffdf733e0720592c81a6deccb10e0",
+    "distributions.png": "1a0018a5d55eb4491e09f3b6b1037ec7cfc451972704116fa03efe3033244e12",
+    "extraction.json": "21aee3e5d9ea7de2f2f34d9901a423bdf5bb0087d86dec78ed6bbfbf5f604908",
+    "feature_smoke.json": "1068bf5162ff2bae2802559feb4a226b38c08f67fbe058dbc69b7ae532455714",
+    "flagged_recordings.jsonl": "7028e0fc43353f9498cd880f5a3e85cc4a2be563636ce6928b5b8c4a30f8aa8d",
+    "focused_checks.txt": "a11406973f1f0470f3ce938a376da526a60012f6a8834e836e96b345e1509470",
+    "initial_v1/speech_statistics.json": "9eda90871a49e12224279bc5667c4214cb66ddf044ef56d6cce235f768233937",
+    "initial_v1/test_lock.json": "3098d98881388c1d08231623b83ceb988993c9bd8a5e3f893443bdaf4c037827",
+    "initial_v1/verification.json": "969358e2babb830e66be89ac4063d364970d0af10184c935bf374aea59107da3",
+    "leakage_audit.json": "b27b7f5d0a4adba25167681f0b6154870890eb8315501eab951b6dcc0634f5e0",
+    "recipe_statistics.json": "73d6fb9fdfe348d1151fbf1f3e2d4c43f9af0b08b2d6e047104b2eccedbf6aa9",
+    "rerun_verification.json": "41132b12ba313957bbb7f98376be540c90992e483a44d3510c7ff004ff2cb45b",
+    "speech_statistics.json": "b83bc4c505c04e930154c499bce1c301345035505d7e1fc3107fc943f029f47b",
+    "verification.json": "a60ab71e553571e4c65f0a60c4c2d9f0e1955e3eca48e9d1744c5671b1d826d5"
+  },
+  "current_manifest_sha256": {
+    "demand_noise.jsonl": "3dd1994294c0c771881ef657dae7220f289a473dd84cf8960633c4e6aa2029e7",
+    "fleurs_test.jsonl": "fd1ed9a04660a45e0a059f1d692b29f851a1db3b55f0a781dc5c63dbfc0f36c0",
+    "fleurs_train.jsonl": "7de92a29b4d69772bb29720d5bda2bb24fa295069068177a0b1024f39a2a5562",
+    "fleurs_validation.jsonl": "3734e14549ea630e8e0f0a3c9e9de64c55d6ba07562cfc2302c50a468a7c9e02",
+    "test_noisy_recipes.jsonl": "17941a5bb6aea3eeb8c5b7c90c69e94877e2a73e76d17430b0d20cce3a62b6bb",
+    "train_e2_epoch0_recipes.jsonl": "52718769f615a8bf5e0402a69193b805f29cd8c7605172c5b127f1cb5840154b",
+    "validation_noisy_recipes.jsonl": "ed93785746ed3f3d9d0bfa1292fd4f2035adcf8e32a891f5c9eeef870baad437"
+  },
+  "data_source_config_sha256": "8351b6de063a5ed0ed0b0c30ced7a2f7794356cff816e605f96b726cdbc99f41",
+  "preprocessing_config_sha256": "13f9bcc2e99688174a42d11e3b12979e3593ba4b276db6696be3e565696fd7c4",
+  "test_lock_sha256": "6e18397b153fb7f7754344bc19c694da33108c5f0e6639b27c6791ac336f6af4"
+}

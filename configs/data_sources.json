@@ -1,0 +1,212 @@
+{
+  "fleurs": {
+    "repository": "google/fleurs",
+    "revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd",
+    "config": "id_id",
+    "split_mapping": {
+      "train": "train",
+      "validation": "dev",
+      "test": "test"
+    },
+    "card_license": [
+      "cc-by-4.0"
+    ]
+  },
+  "processor": {
+    "repository": "openai/whisper-tiny",
+    "revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af"
+  },
+  "demand": {
+    "record": "1227121",
+    "version": "1.0",
+    "metadata_license": {
+      "id": "cc-by-4.0"
+    },
+    "description_html": "<p><strong>DEMAND: Diverse Environments Multichannel Acoustic Noise Database</strong></p>\n\n<p>A database of 16-channel environmental noise recordings</p>\n\n<p><strong>Introduction</strong></p>\n\n<p>Microphone arrays, a (typically regular) arrangement of several microphones, allow for a number of interesting signal processing techniques. The correlation of audio signals from microphones that are located in close proximity with each other can, for example, be used to determine the spatial location of sound source relative to the array, or to isolate or enhance a signal based on the direction from which the sound reaches the array.</p>\n\n<p>Typically, experiments with microphone arrays that consider acoustic background noise use controlled environments or simulated environments. Such artificial setups will in general be sparse in terms of noise sources. Other pre-existing real-world noise databases (e.g. the <a href=\"http://catalog.elra.info/product_info.php?products_id=693\">AURORA-2</a> corpus, the <a href=\"http://spandh.dcs.shef.ac.uk/projects/chime/PCC/datasets.html\">CHiME</a> background noise data, or the <a href=\"http://www.speech.cs.cmu.edu/comp.speech/Section1/Data/noisex.html\">NOISEX-92</a> database) tend to provide only a very limited variety of environments and are limited to at most 2 channels.</p>\n\n<p>The DEMAND (Diverse Environments Multichannel Acoustic Noise Database) presented here provides a set of recordings that allow testing of algorithms using real-world noise in a variety of settings. This version provides 15 recordings. All recordings are made with a 16-channel array, with the smallest distance between microphones being 5 cm and the largest being 21.8 cm.</p>\n\n<p><strong>License</strong></p>\n\n<p>This work, the audio data and the document describing it, is licensed under a <a href=\"http://creativecommons.org/licenses/by-sa/3.0/deed.en_CA\">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>\n\n<p><strong>The data</strong></p>\n\n<p>A description of the data and the recording equipment is provided in the file <strong>DEMAND.pdf</strong>. All recordings are available as 16 single-channel WAV files in one directory at both 48 kHz and 16 kHz sampling rates. All files are compressed into &quot;zip&quot; files.</p>\n\n<p><strong>Other information</strong></p>\n\n<p>The MATLAB scripts listed in the documentation can be found in the file <strong>scripts.zip</strong>.</p>\n\n<p><strong>The Authors</strong></p>\n\n<p>This work was created by Joachim Thiemann (IRISA-CNRS), Nobutaka Ito (University of Tokyo), and Emmanuel Vincent (Inria Rennes - Bretagne Atlantique). It was supported by Inria under the Associate Team Program <a href=\"http://versamus.inria.fr\">VERSAMUS</a>.</p>",
+    "roles": {
+      "train": "OOFFICE",
+      "validation": "OHALLWAY",
+      "test": "PCAFETER"
+    },
+    "channel": 1
+  },
+  "files": [
+    {
+      "name": "data/id_id/train.tsv",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/train.tsv",
+      "path": "data/raw/fleurs/train.tsv",
+      "size": 1499201,
+      "official_git_blob_sha1": "b1ff45af8bc3a1bcc66750ce74bbeedc64fa9126"
+    },
+    {
+      "name": "data/id_id/dev.tsv",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/dev.tsv",
+      "path": "data/raw/fleurs/dev.tsv",
+      "size": 200236,
+      "official_git_blob_sha1": "e81835c62d98158a4b1f946c645db2f1f5f6c46a"
+    },
+    {
+      "name": "data/id_id/test.tsv",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/test.tsv",
+      "path": "data/raw/fleurs/test.tsv",
+      "size": 408796,
+      "official_git_blob_sha1": "5fdc2017321181c67536adb936197fdbadfdd19e"
+    },
+    {
+      "name": "data/id_id/audio/train.tar.gz",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/audio/train.tar.gz",
+      "path": "data/raw/fleurs/train.tar.gz",
+      "size": 1697523639,
+      "official_git_blob_sha1": "ac7ec393e0995df874a2861eba6c9110099d5a29",
+      "official_checksum": {
+        "algorithm": "sha256",
+        "value": "44983febf5a3d9670352f9765d05b9238056bf6ab64ee1479af198670597c11d"
+      }
+    },
+    {
+      "name": "data/id_id/audio/dev.tar.gz",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/audio/dev.tar.gz",
+      "path": "data/raw/fleurs/dev.tar.gz",
+      "size": 220586217,
+      "official_git_blob_sha1": "5b71775cae83e5f6883dd11b1db3d8d4a08ef0dd",
+      "official_checksum": {
+        "algorithm": "sha256",
+        "value": "74e5f1c8676a321dc4c34944b171846d40923dabe765a767d8dbc2f56cac3142"
+      }
+    },
+    {
+      "name": "data/id_id/audio/test.tar.gz",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/audio/test.tar.gz",
+      "path": "data/raw/fleurs/test.tar.gz",
+      "size": 451704157,
+      "official_git_blob_sha1": "91f0eb7a74fc5ebca5311c97e648fba9ea38b634",
+      "official_checksum": {
+        "algorithm": "sha256",
+        "value": "bf7e7f608f8834012d7f79a583b6b0dd5bb82e74e2f5fb6336fc99d3af7ffcf8"
+      }
+    },
+    {
+      "name": "README.md",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/README.md",
+      "path": "data/raw/metadata/FLEURS_README.md",
+      "size": 385614,
+      "official_git_blob_sha1": "dcc0872174e54ad416dee938651d777378d4ba4f"
+    },
+    {
+      "name": "config.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/config.json",
+      "path": "data/checkpoints/whisper-tiny-processor/config.json",
+      "size": 1983,
+      "official_git_blob_sha1": "417aa9de49a132dd3eb6a56d3be2718b15f08917"
+    },
+    {
+      "name": "generation_config.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/generation_config.json",
+      "path": "data/checkpoints/whisper-tiny-processor/generation_config.json",
+      "size": 3747,
+      "official_git_blob_sha1": "4b26dd66b8f7bca37d851d259fdc118315cacc62"
+    },
+    {
+      "name": "preprocessor_config.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/preprocessor_config.json",
+      "path": "data/checkpoints/whisper-tiny-processor/preprocessor_config.json",
+      "size": 184990,
+      "official_git_blob_sha1": "c2048dfa9fd94a052e62e908d2c4dfb18534b4d2"
+    },
+    {
+      "name": "tokenizer.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/tokenizer.json",
+      "path": "data/checkpoints/whisper-tiny-processor/tokenizer.json",
+      "size": 2480466,
+      "official_git_blob_sha1": "1e95340ff836fad1b5932e800fb7b8c5e6d78a74"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/tokenizer_config.json",
+      "path": "data/checkpoints/whisper-tiny-processor/tokenizer_config.json",
+      "size": 282683,
+      "official_git_blob_sha1": "d13b786c04765fb1a06492b53587752cd67665ea"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/special_tokens_map.json",
+      "path": "data/checkpoints/whisper-tiny-processor/special_tokens_map.json",
+      "size": 2194,
+      "official_git_blob_sha1": "bf69932dca4b3719b59fdd8f6cc1978109509f6c"
+    },
+    {
+      "name": "added_tokens.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/added_tokens.json",
+      "path": "data/checkpoints/whisper-tiny-processor/added_tokens.json",
+      "size": 34604,
+      "official_git_blob_sha1": "e3d256c988462aa153dcabe2aa38b8e9b436c06f"
+    },
+    {
+      "name": "vocab.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/vocab.json",
+      "path": "data/checkpoints/whisper-tiny-processor/vocab.json",
+      "size": 835550,
+      "official_git_blob_sha1": "d7016e21da8776c8a9d577d0f559600f09a240eb"
+    },
+    {
+      "name": "merges.txt",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/merges.txt",
+      "path": "data/checkpoints/whisper-tiny-processor/merges.txt",
+      "size": 493869,
+      "official_git_blob_sha1": "6038932a2a1f09a66991b1c2adae0d14066fa29e"
+    },
+    {
+      "name": "normalizer.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/normalizer.json",
+      "path": "data/checkpoints/whisper-tiny-processor/normalizer.json",
+      "size": 52666,
+      "official_git_blob_sha1": "dd6ae819ad738ac1a546e9f9282ef325c33b9ea0"
+    },
+    {
+      "name": "PCAFETER_16k.zip",
+      "url": "https://zenodo.org/api/records/1227121/files/PCAFETER_16k.zip/content",
+      "path": "data/raw/demand/PCAFETER_16k.zip",
+      "size": 107431494,
+      "official_checksum": {
+        "algorithm": "md5",
+        "value": "99927d148128254141a9417d051510bb"
+      }
+    },
+    {
+      "name": "OOFFICE_16k.zip",
+      "url": "https://zenodo.org/api/records/1227121/files/OOFFICE_16k.zip/content",
+      "path": "data/raw/demand/OOFFICE_16k.zip",
+      "size": 88995191,
+      "official_checksum": {
+        "algorithm": "md5",
+        "value": "7b61cc2d182d5a654cb9c3101ddd4041"
+      }
+    },
+    {
+      "name": "OHALLWAY_16k.zip",
+      "url": "https://zenodo.org/api/records/1227121/files/OHALLWAY_16k.zip/content",
+      "path": "data/raw/demand/OHALLWAY_16k.zip",
+      "size": 77941854,
+      "official_checksum": {
+        "algorithm": "md5",
+        "value": "fe918bbb0e63e73d09ba7f4843ef33f1"
+      }
+    },
+    {
+      "name": "DEMAND.pdf",
+      "url": "https://zenodo.org/api/records/1227121/files/DEMAND.pdf/content",
+      "path": "data/raw/demand/DEMAND.pdf",
+      "size": 87837,
+      "official_checksum": {
+        "algorithm": "md5",
+        "value": "a513afe131e08cdacf7c1854b174d5ab"
+      }
+    }
+  ],
+  "storage_preflight": {
+    "free_bytes": 250882379776,
+    "download_bytes": 2651136988,
+    "estimated_additional_extraction_cache_bytes": 7953410964,
+    "conservative_required_bytes": 11678289776
+  }
+}

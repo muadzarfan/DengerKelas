@@ -1,0 +1,127 @@
+{"event": "sources_pinned", "utc": "2026-10-25T11:20:59Z", "fleurs_revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd", "processor_revision": "169d4a4341b33bc18d8881c4b69c2e104e1cc0af", "files": 21, "download_bytes": 2651136988, "free_bytes": 250882379776, "demand_metadata_license": {"id": "cc-by-4.0"}}
+{"event": "download_complete", "utc": "2026-10-25T11:20:59Z", "file": "data/id_id/test.tsv", "bytes": 408796}
+{"event": "download_complete", "utc": "2026-10-25T11:20:59Z", "file": "data/id_id/dev.tsv", "bytes": 200236}
+{"event": "download_complete", "utc": "2026-10-25T11:21:00Z", "file": "data/id_id/train.tsv", "bytes": 1499201}
+{"event": "download_complete", "utc": "2026-10-25T11:21:00Z", "file": "config.json", "bytes": 1983}
+{"event": "download_complete", "utc": "2026-10-25T11:21:00Z", "file": "generation_config.json", "bytes": 3747}
+{"event": "download_complete", "utc": "2026-10-25T11:21:00Z", "file": "README.md", "bytes": 385614}
+{"event": "download_complete", "utc": "2026-10-25T11:21:00Z", "file": "preprocessor_config.json", "bytes": 184990}
+{"event": "download_complete", "utc": "2026-10-25T11:21:01Z", "file": "tokenizer.json", "bytes": 2480466}
+{"event": "download_complete", "utc": "2026-10-25T11:21:01Z", "file": "tokenizer_config.json", "bytes": 282683}
+{"event": "download_complete", "utc": "2026-10-25T11:21:01Z", "file": "special_tokens_map.json", "bytes": 2194}
+{"event": "download_complete", "utc": "2026-10-25T11:21:01Z", "file": "added_tokens.json", "bytes": 34604}
+{"event": "download_complete", "utc": "2026-10-25T11:21:02Z", "file": "normalizer.json", "bytes": 52666}
+{"event": "download_complete", "utc": "2026-10-25T11:21:02Z", "file": "vocab.json", "bytes": 835550}
+{"event": "download_complete", "utc": "2026-10-25T11:21:02Z", "file": "merges.txt", "bytes": 493869}
+{"event": "download_retry", "utc": "2026-10-25T11:21:02Z", "file": "DEMAND.pdf", "attempt": 1, "error": "HTTP Error 502: Bad Gateway"}
+{"event": "download_complete", "utc": "2026-10-25T11:21:04Z", "file": "DEMAND.pdf", "bytes": 87837}
+{"event": "reuse_pinned_sources", "utc": "2026-10-25T11:21:38Z", "path": "configs/data_sources.json"}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:21:38Z", "file": "data/id_id/test.tsv", "bytes": 408796}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:21:38Z", "file": "data/id_id/dev.tsv", "bytes": 200236}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:21:38Z", "file": "data/id_id/train.tsv", "bytes": 1499201}
+{"event": "download_complete", "utc": "2026-10-25T11:24:32Z", "file": "data/id_id/audio/dev.tar.gz", "bytes": 220586217}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "README.md", "bytes": 385614}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "config.json", "bytes": 1983}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "generation_config.json", "bytes": 3747}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "preprocessor_config.json", "bytes": 184990}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "tokenizer.json", "bytes": 2480466}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "tokenizer_config.json", "bytes": 282683}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "special_tokens_map.json", "bytes": 2194}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "added_tokens.json", "bytes": 34604}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "vocab.json", "bytes": 835550}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "merges.txt", "bytes": 493869}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:24:33Z", "file": "normalizer.json", "bytes": 52666}
+{"event": "download_complete", "utc": "2026-10-25T11:25:59Z", "file": "data/id_id/audio/test.tar.gz", "bytes": 451704157}
+{"event": "download_retry", "utc": "2026-10-25T11:28:57Z", "file": "OOFFICE_16k.zip", "attempt": 1, "error": "Downloaded artifact failed official size/checksum verification"}
+{"event": "download_complete", "utc": "2026-10-25T11:29:30Z", "file": "data/id_id/audio/train.tar.gz", "bytes": 1697523639}
+{"event": "download_retry", "utc": "2026-10-25T11:30:08Z", "file": "PCAFETER_16k.zip", "attempt": 1, "error": "Downloaded artifact failed official size/checksum verification"}
+{"event": "download_complete", "utc": "2026-10-25T11:31:40Z", "file": "OHALLWAY_16k.zip", "bytes": 77941854}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:31:40Z", "file": "DEMAND.pdf", "bytes": 87837}
+{"event": "download_complete", "utc": "2026-10-25T11:32:26Z", "file": "OOFFICE_16k.zip", "bytes": 88995191}
+{"event": "download_complete", "utc": "2026-10-25T11:32:50Z", "file": "PCAFETER_16k.zip", "bytes": 107431494}
+{"event": "speech_extracted", "utc": "2026-10-25T11:33:54Z", "split": "train", "expected_files": 2579, "archive_files": 2579, "newly_extracted": 2579}
+{"event": "speech_extracted", "utc": "2026-10-25T11:34:08Z", "split": "validation", "expected_files": 350, "archive_files": 350, "newly_extracted": 350}
+{"event": "speech_extracted", "utc": "2026-10-25T11:34:38Z", "split": "test", "expected_files": 687, "archive_files": 687, "newly_extracted": 687}
+{"event": "noise_extracted", "utc": "2026-10-25T11:38:00Z", "environment": "OOFFICE", "selected_channel": "OOFFICE/ch01.wav", "available_channels": 16}
+{"event": "noise_extracted", "utc": "2026-10-25T11:38:00Z", "environment": "OHALLWAY", "selected_channel": "OHALLWAY/ch01.wav", "available_channels": 16}
+{"event": "noise_extracted", "utc": "2026-10-25T11:38:01Z", "environment": "PCAFETER", "selected_channel": "PCAFETER/ch01.wav", "available_channels": 16}
+{"event": "noise_audit_finished", "utc": "2026-10-25T11:38:01Z", "environments": [{"environment": "OOFFICE", "seconds": 300.004, "sample_rate": 16000, "samples": 4800064}, {"environment": "OHALLWAY", "seconds": 300.004, "sample_rate": 16000, "samples": 4800064}, {"environment": "PCAFETER", "seconds": 300.004, "sample_rate": 16000, "samples": 4800064}]}
+{"event": "speech_audit_finished", "utc": "2026-10-25T11:38:21Z", "counts": {"train": [2579, 2571], "validation": [350, 350], "test": [687, 684]}, "exact_cross_split_groups": 0, "repeated_text_cross_split_groups": 0}
+{"event": "noise_recipes_ready", "utc": "2026-10-25T11:40:08Z", "train": {"recipes": 2571, "noisy": 1289, "clean": 1282, "environment": "OOFFICE"}, "validation": {"recipes": 700, "noisy": 700, "clean": 0, "environment": "OHALLWAY"}, "test": {"recipes": 1368, "noisy": 1368, "clean": 0, "environment": "PCAFETER"}}
+{"event": "verification_passed", "utc": "2026-10-25T11:40:36Z", "checks": 23546, "storage": {"data/raw": 5584480354, "data/processed": 0, "data/manifests": 11466133, "data/checkpoints/whisper-tiny-processor": 4372752}}
+{"event": "audit_plot_created", "utc": "2026-10-25T11:40:46Z", "path": "results/step3/distributions.png"}
+{"event": "speech_audit_finished", "utc": "2026-10-25T11:42:59Z", "counts": {"train": [2579, 2538], "validation": [350, 345], "test": [687, 678]}, "exact_cross_split_groups": 0, "repeated_text_cross_split_groups": 0}
+{"event": "noise_recipes_ready", "utc": "2026-10-25T11:43:00Z", "train": {"recipes": 2538, "noisy": 1268, "clean": 1270, "environment": "OOFFICE"}, "validation": {"recipes": 690, "noisy": 690, "clean": 0, "environment": "OHALLWAY"}, "test": {"recipes": 1356, "noisy": 1356, "clean": 0, "environment": "PCAFETER"}}
+{"event": "verification_passed", "utc": "2026-10-25T11:43:18Z", "checks": 23349, "storage": {"data/raw": 5584480354, "data/processed": 0, "data/manifests": 11421057, "data/checkpoints/whisper-tiny-processor": 4372752}}
+{"event": "audit_plot_created", "utc": "2026-10-25T11:43:20Z", "path": "results/step3/distributions.png"}
+{"event": "reuse_pinned_sources", "utc": "2026-10-25T11:52:27Z", "path": "configs/data_sources.json"}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "data/id_id/dev.tsv", "bytes": 200236}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "data/id_id/test.tsv", "bytes": 408796}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "data/id_id/train.tsv", "bytes": 1499201}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "data/id_id/audio/dev.tar.gz", "bytes": 220586217}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "README.md", "bytes": 385614}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "config.json", "bytes": 1983}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "generation_config.json", "bytes": 3747}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "preprocessor_config.json", "bytes": 184990}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "tokenizer.json", "bytes": 2480466}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "data/id_id/audio/test.tar.gz", "bytes": 451704157}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "tokenizer_config.json", "bytes": 282683}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "special_tokens_map.json", "bytes": 2194}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "added_tokens.json", "bytes": 34604}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "vocab.json", "bytes": 835550}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "merges.txt", "bytes": 493869}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:27Z", "file": "normalizer.json", "bytes": 52666}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:28Z", "file": "PCAFETER_16k.zip", "bytes": 107431494}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:28Z", "file": "OOFFICE_16k.zip", "bytes": 88995191}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:28Z", "file": "DEMAND.pdf", "bytes": 87837}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:28Z", "file": "OHALLWAY_16k.zip", "bytes": 77941854}
+{"event": "download_verified_skip", "utc": "2026-10-25T11:52:29Z", "file": "data/id_id/audio/train.tar.gz", "bytes": 1697523639}
+{"event": "speech_extracted", "utc": "2026-10-25T11:52:39Z", "split": "train", "expected_files": 2579, "archive_files": 2579, "newly_extracted": 0, "verified_reuse": true}
+{"event": "speech_extracted", "utc": "2026-10-25T11:52:40Z", "split": "validation", "expected_files": 350, "archive_files": 350, "newly_extracted": 0, "verified_reuse": true}
+{"event": "speech_extracted", "utc": "2026-10-25T11:52:42Z", "split": "test", "expected_files": 687, "archive_files": 687, "newly_extracted": 0, "verified_reuse": true}
+{"event": "noise_extracted", "utc": "2026-10-25T11:52:42Z", "environment": "OOFFICE", "selected_channel": "OOFFICE/ch01.wav", "available_channels": 16}
+{"event": "noise_extracted", "utc": "2026-10-25T11:52:42Z", "environment": "OHALLWAY", "selected_channel": "OHALLWAY/ch01.wav", "available_channels": 16}
+{"event": "noise_extracted", "utc": "2026-10-25T11:52:43Z", "environment": "PCAFETER", "selected_channel": "PCAFETER/ch01.wav", "available_channels": 16}
+{"event": "speech_audit_finished", "utc": "2026-10-25T11:53:02Z", "counts": {"train": [2579, 2538], "validation": [350, 345], "test": [687, 678]}, "exact_cross_split_groups": 0, "repeated_text_cross_split_groups": 0}
+{"event": "noise_audit_finished", "utc": "2026-10-25T11:53:03Z", "environments": [{"environment": "OOFFICE", "seconds": 300.004, "sample_rate": 16000, "samples": 4800064}, {"environment": "OHALLWAY", "seconds": 300.004, "sample_rate": 16000, "samples": 4800064}, {"environment": "PCAFETER", "seconds": 300.004, "sample_rate": 16000, "samples": 4800064}]}
+{"event": "noise_recipes_ready", "utc": "2026-10-25T11:53:03Z", "train": {"recipes": 2538, "noisy": 1268, "clean": 1270, "environment": "OOFFICE"}, "validation": {"recipes": 690, "noisy": 690, "clean": 0, "environment": "OHALLWAY"}, "test": {"recipes": 1356, "noisy": 1356, "clean": 0, "environment": "PCAFETER"}}
+{"event": "verification_passed", "utc": "2026-10-25T11:53:20Z", "checks": 23349, "storage": {"data/raw": 5584480354, "data/processed": 0, "data/manifests": 11421057, "data/checkpoints/whisper-tiny-processor": 4372752}}
+{"event": "audit_plot_created", "utc": "2026-10-25T11:53:22Z", "path": "results/step3/distributions.png"}
+{"event": "preparation_complete", "utc": "2026-10-25T11:53:22Z", "elapsed_seconds": 55.04596140002832, "same_manifest_bytes": true}
+{"event": "dataset_documents_rendered", "utc": "2026-10-25T12:00:35Z", "status": "Selesai"}
+{"event": "reuse_pinned_sources", "utc": "2026-10-25T12:06:17Z", "path": "configs/data_sources.json"}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:17Z", "file": "data/id_id/dev.tsv", "bytes": 200236}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:17Z", "file": "data/id_id/test.tsv", "bytes": 408796}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:17Z", "file": "data/id_id/train.tsv", "bytes": 1499201}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "data/id_id/audio/dev.tar.gz", "bytes": 220586217}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "data/id_id/audio/test.tar.gz", "bytes": 451704157}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "README.md", "bytes": 385614}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "config.json", "bytes": 1983}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "generation_config.json", "bytes": 3747}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "preprocessor_config.json", "bytes": 184990}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "tokenizer.json", "bytes": 2480466}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "tokenizer_config.json", "bytes": 282683}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "special_tokens_map.json", "bytes": 2194}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "added_tokens.json", "bytes": 34604}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "vocab.json", "bytes": 835550}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "merges.txt", "bytes": 493869}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "normalizer.json", "bytes": 52666}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "PCAFETER_16k.zip", "bytes": 107431494}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "OOFFICE_16k.zip", "bytes": 88995191}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "OHALLWAY_16k.zip", "bytes": 77941854}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:18Z", "file": "DEMAND.pdf", "bytes": 87837}
+{"event": "download_verified_skip", "utc": "2026-10-25T12:06:19Z", "file": "data/id_id/audio/train.tar.gz", "bytes": 1697523639}
+{"event": "speech_extracted", "utc": "2026-10-25T12:06:29Z", "split": "train", "expected_files": 2579, "archive_files": 2579, "newly_extracted": 0, "verified_reuse": true}
+{"event": "speech_extracted", "utc": "2026-10-25T12:06:30Z", "split": "validation", "expected_files": 350, "archive_files": 350, "newly_extracted": 0, "verified_reuse": true}
+{"event": "speech_extracted", "utc": "2026-10-25T12:06:31Z", "split": "test", "expected_files": 687, "archive_files": 687, "newly_extracted": 0, "verified_reuse": true}
+{"event": "noise_extracted", "utc": "2026-10-25T12:06:31Z", "environment": "OOFFICE", "selected_channel": "OOFFICE/ch01.wav", "available_channels": 16}
+{"event": "noise_extracted", "utc": "2026-10-25T12:06:31Z", "environment": "OHALLWAY", "selected_channel": "OHALLWAY/ch01.wav", "available_channels": 16}
+{"event": "noise_extracted", "utc": "2026-10-25T12:06:32Z", "environment": "PCAFETER", "selected_channel": "PCAFETER/ch01.wav", "available_channels": 16}
+{"event": "speech_audit_finished", "utc": "2026-10-25T12:06:50Z", "counts": {"train": [2579, 2538], "validation": [350, 345], "test": [687, 678]}, "exact_cross_split_groups": 0, "repeated_text_cross_split_groups": 0}
+{"event": "noise_audit_finished", "utc": "2026-10-25T12:06:50Z", "environments": [{"environment": "OOFFICE", "seconds": 300.004, "sample_rate": 16000, "samples": 4800064}, {"environment": "OHALLWAY", "seconds": 300.004, "sample_rate": 16000, "samples": 4800064}, {"environment": "PCAFETER", "seconds": 300.004, "sample_rate": 16000, "samples": 4800064}]}
+{"event": "noise_recipes_ready", "utc": "2026-10-25T12:06:51Z", "train": {"recipes": 2538, "noisy": 1268, "clean": 1270, "environment": "OOFFICE"}, "validation": {"recipes": 690, "noisy": 690, "clean": 0, "environment": "OHALLWAY"}, "test": {"recipes": 1356, "noisy": 1356, "clean": 0, "environment": "PCAFETER"}}
+{"event": "verification_passed", "utc": "2026-10-25T12:07:07Z", "checks": 23349, "storage": {"data/raw": 5584480354, "data/processed": 0, "data/manifests": 11422638, "data/checkpoints/whisper-tiny-processor": 4372752}}
+{"event": "audit_plot_created", "utc": "2026-10-25T12:07:08Z", "path": "results/step3/distributions.png"}
+{"event": "preparation_complete", "utc": "2026-10-25T12:07:08Z", "elapsed_seconds": 51.171809800027404, "same_manifest_bytes": true}
+{"event": "dataset_documents_rendered", "utc": "2026-10-25T12:08:37Z", "status": "Selesai"}
+{"event": "dataset_documents_rendered", "utc": "2026-10-25T12:10:03Z", "status": "Selesai"}

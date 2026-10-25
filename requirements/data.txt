@@ -1,0 +1,7 @@
+-r core.txt
+# Installed and verified for Step 3 processor/tokenizer, audit and plots.
+transformers==5.20.2
+tokenizers==0.23.3
+matplotlib==3.11.2
+# Direct official archive acquisition uses Python's standard library.
+# PyTorch, datasets/Arrow, and ASR model weights are not required for this stage.

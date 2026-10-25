@@ -1,0 +1,240 @@
+{
+  "files": [
+    {
+      "name": "added_tokens.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/added_tokens.json",
+      "path": "data/checkpoints/whisper-tiny-processor/added_tokens.json",
+      "size": 34604,
+      "official_git_blob_sha1": "e3d256c988462aa153dcabe2aa38b8e9b436c06f",
+      "sha256": "9715fd2243b6f06a5858b5e32950d2853f73dd5bc201aafcf76f5082a2d8acd1",
+      "verified": true,
+      "actual_bytes": 34604
+    },
+    {
+      "name": "config.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/config.json",
+      "path": "data/checkpoints/whisper-tiny-processor/config.json",
+      "size": 1983,
+      "official_git_blob_sha1": "417aa9de49a132dd3eb6a56d3be2718b15f08917",
+      "sha256": "ffdccec4f3211f4c63310f2b7098f309fe70f3952cedc5e4d11e43f5b2379b98",
+      "verified": true,
+      "actual_bytes": 1983
+    },
+    {
+      "name": "generation_config.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/generation_config.json",
+      "path": "data/checkpoints/whisper-tiny-processor/generation_config.json",
+      "size": 3747,
+      "official_git_blob_sha1": "4b26dd66b8f7bca37d851d259fdc118315cacc62",
+      "sha256": "a5d5325911f16e74001a72fa13d6e208eee51548f994646de1f4b4cc8b35b512",
+      "verified": true,
+      "actual_bytes": 3747
+    },
+    {
+      "name": "merges.txt",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/merges.txt",
+      "path": "data/checkpoints/whisper-tiny-processor/merges.txt",
+      "size": 493869,
+      "official_git_blob_sha1": "6038932a2a1f09a66991b1c2adae0d14066fa29e",
+      "sha256": "2df2990a395e35e8dfbc7511e08c12d56018d8d04691e0133e5d63b21e154dc6",
+      "verified": true,
+      "actual_bytes": 493869
+    },
+    {
+      "name": "normalizer.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/normalizer.json",
+      "path": "data/checkpoints/whisper-tiny-processor/normalizer.json",
+      "size": 52666,
+      "official_git_blob_sha1": "dd6ae819ad738ac1a546e9f9282ef325c33b9ea0",
+      "sha256": "bf1c507dc8724ca9cf9903640dacfb69dae2f00edee4f21ceba106a7392f26dd",
+      "verified": true,
+      "actual_bytes": 52666
+    },
+    {
+      "name": "preprocessor_config.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/preprocessor_config.json",
+      "path": "data/checkpoints/whisper-tiny-processor/preprocessor_config.json",
+      "size": 184990,
+      "official_git_blob_sha1": "c2048dfa9fd94a052e62e908d2c4dfb18534b4d2",
+      "sha256": "9b5cd03a36fbb8a627c64d98a5b5b126ead95a77720723944487311f0110b666",
+      "verified": true,
+      "actual_bytes": 184990
+    },
+    {
+      "name": "special_tokens_map.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/special_tokens_map.json",
+      "path": "data/checkpoints/whisper-tiny-processor/special_tokens_map.json",
+      "size": 2194,
+      "official_git_blob_sha1": "bf69932dca4b3719b59fdd8f6cc1978109509f6c",
+      "sha256": "e67ae3a0aaa99abcd9f187138e12db1f65c16a14761c50ef10eef2c174a7a691",
+      "verified": true,
+      "actual_bytes": 2194
+    },
+    {
+      "name": "tokenizer.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/tokenizer.json",
+      "path": "data/checkpoints/whisper-tiny-processor/tokenizer.json",
+      "size": 2480466,
+      "official_git_blob_sha1": "1e95340ff836fad1b5932e800fb7b8c5e6d78a74",
+      "sha256": "27fc476bfe7f17299480be2273fc0608e4d5a99aba2ab5dec5374b4482d1a566",
+      "verified": true,
+      "actual_bytes": 2480466
+    },
+    {
+      "name": "tokenizer_config.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/tokenizer_config.json",
+      "path": "data/checkpoints/whisper-tiny-processor/tokenizer_config.json",
+      "size": 282683,
+      "official_git_blob_sha1": "d13b786c04765fb1a06492b53587752cd67665ea",
+      "sha256": "2a4c4281cf9f51ac6ccc406fdc711a087afe6530f671fa7b80953edc498275ce",
+      "verified": true,
+      "actual_bytes": 282683
+    },
+    {
+      "name": "vocab.json",
+      "url": "https://huggingface.co/openai/whisper-tiny/resolve/169d4a4341b33bc18d8881c4b69c2e104e1cc0af/vocab.json",
+      "path": "data/checkpoints/whisper-tiny-processor/vocab.json",
+      "size": 835550,
+      "official_git_blob_sha1": "d7016e21da8776c8a9d577d0f559600f09a240eb",
+      "sha256": "8f680bba319e01a653d2e8a5dbc17a9157179e0576e6ce74ce0c06356c6e24f9",
+      "verified": true,
+      "actual_bytes": 835550
+    },
+    {
+      "name": "DEMAND.pdf",
+      "url": "https://zenodo.org/api/records/1227121/files/DEMAND.pdf/content",
+      "path": "data/raw/demand/DEMAND.pdf",
+      "size": 87837,
+      "official_checksum": {
+        "algorithm": "md5",
+        "value": "a513afe131e08cdacf7c1854b174d5ab"
+      },
+      "sha256": "debec0d9de603c800a062108a065efb61d87b56cd1718b0b61566e2fed6b4800",
+      "verified": true,
+      "actual_bytes": 87837
+    },
+    {
+      "name": "OHALLWAY_16k.zip",
+      "url": "https://zenodo.org/api/records/1227121/files/OHALLWAY_16k.zip/content",
+      "path": "data/raw/demand/OHALLWAY_16k.zip",
+      "size": 77941854,
+      "official_checksum": {
+        "algorithm": "md5",
+        "value": "fe918bbb0e63e73d09ba7f4843ef33f1"
+      },
+      "sha256": "4d5ef858a05954f03340048131f60a2004b7b28afc65f7bd2301636a7002d6cb",
+      "verified": true,
+      "actual_bytes": 77941854
+    },
+    {
+      "name": "OOFFICE_16k.zip",
+      "url": "https://zenodo.org/api/records/1227121/files/OOFFICE_16k.zip/content",
+      "path": "data/raw/demand/OOFFICE_16k.zip",
+      "size": 88995191,
+      "official_checksum": {
+        "algorithm": "md5",
+        "value": "7b61cc2d182d5a654cb9c3101ddd4041"
+      },
+      "sha256": "7570c952f621990d0d71b8398107d9a78066254f883a5569abec9c233ffda358",
+      "verified": true,
+      "actual_bytes": 88995191
+    },
+    {
+      "name": "PCAFETER_16k.zip",
+      "url": "https://zenodo.org/api/records/1227121/files/PCAFETER_16k.zip/content",
+      "path": "data/raw/demand/PCAFETER_16k.zip",
+      "size": 107431494,
+      "official_checksum": {
+        "algorithm": "md5",
+        "value": "99927d148128254141a9417d051510bb"
+      },
+      "sha256": "89be7194b83cd583c4b12f4bf7c19e9cf0e612b95312e9f4aedc968cd811bcd5",
+      "verified": true,
+      "actual_bytes": 107431494
+    },
+    {
+      "name": "data/id_id/audio/dev.tar.gz",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/audio/dev.tar.gz",
+      "path": "data/raw/fleurs/dev.tar.gz",
+      "size": 220586217,
+      "official_git_blob_sha1": "5b71775cae83e5f6883dd11b1db3d8d4a08ef0dd",
+      "official_checksum": {
+        "algorithm": "sha256",
+        "value": "74e5f1c8676a321dc4c34944b171846d40923dabe765a767d8dbc2f56cac3142"
+      },
+      "sha256": "74e5f1c8676a321dc4c34944b171846d40923dabe765a767d8dbc2f56cac3142",
+      "verified": true,
+      "actual_bytes": 220586217
+    },
+    {
+      "name": "data/id_id/dev.tsv",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/dev.tsv",
+      "path": "data/raw/fleurs/dev.tsv",
+      "size": 200236,
+      "official_git_blob_sha1": "e81835c62d98158a4b1f946c645db2f1f5f6c46a",
+      "sha256": "8377bf6d8738491b7b0672de47e42123ce07b069a0db920ab6300e3ecce02c18",
+      "verified": true,
+      "actual_bytes": 200236
+    },
+    {
+      "name": "data/id_id/audio/test.tar.gz",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/audio/test.tar.gz",
+      "path": "data/raw/fleurs/test.tar.gz",
+      "size": 451704157,
+      "official_git_blob_sha1": "91f0eb7a74fc5ebca5311c97e648fba9ea38b634",
+      "official_checksum": {
+        "algorithm": "sha256",
+        "value": "bf7e7f608f8834012d7f79a583b6b0dd5bb82e74e2f5fb6336fc99d3af7ffcf8"
+      },
+      "sha256": "bf7e7f608f8834012d7f79a583b6b0dd5bb82e74e2f5fb6336fc99d3af7ffcf8",
+      "verified": true,
+      "actual_bytes": 451704157
+    },
+    {
+      "name": "data/id_id/test.tsv",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/test.tsv",
+      "path": "data/raw/fleurs/test.tsv",
+      "size": 408796,
+      "official_git_blob_sha1": "5fdc2017321181c67536adb936197fdbadfdd19e",
+      "sha256": "824cad6367283d95f545911eec051c488c182baa13a63227c6330af3c8f80741",
+      "verified": true,
+      "actual_bytes": 408796
+    },
+    {
+      "name": "data/id_id/audio/train.tar.gz",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/audio/train.tar.gz",
+      "path": "data/raw/fleurs/train.tar.gz",
+      "size": 1697523639,
+      "official_git_blob_sha1": "ac7ec393e0995df874a2861eba6c9110099d5a29",
+      "official_checksum": {
+        "algorithm": "sha256",
+        "value": "44983febf5a3d9670352f9765d05b9238056bf6ab64ee1479af198670597c11d"
+      },
+      "sha256": "44983febf5a3d9670352f9765d05b9238056bf6ab64ee1479af198670597c11d",
+      "verified": true,
+      "actual_bytes": 1697523639
+    },
+    {
+      "name": "data/id_id/train.tsv",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/data/id_id/train.tsv",
+      "path": "data/raw/fleurs/train.tsv",
+      "size": 1499201,
+      "official_git_blob_sha1": "b1ff45af8bc3a1bcc66750ce74bbeedc64fa9126",
+      "sha256": "5a4285ed00caff57f9dce155c7c1f636cfb9c322a795d55e04d98d4b7696fcec",
+      "verified": true,
+      "actual_bytes": 1499201
+    },
+    {
+      "name": "README.md",
+      "url": "https://huggingface.co/datasets/google/fleurs/resolve/70bb2e84b976b7e960aa89f1c648e09c59f894dd/README.md",
+      "path": "data/raw/metadata/FLEURS_README.md",
+      "size": 385614,
+      "official_git_blob_sha1": "dcc0872174e54ad416dee938651d777378d4ba4f",
+      "sha256": "688f79f2a5c731af3796e9f683eb02f9b3f09d040decd8c5625d0f37098e71c6",
+      "verified": true,
+      "actual_bytes": 385614
+    }
+  ],
+  "failures": [],
+  "metadata_only": false
+}

@@ -1,0 +1,10 @@
+test_minimal_training_vs_symmetric_scoring (test_data_preparation.DataChecks.test_minimal_training_vs_symmetric_scoring) ... ok
+test_seed_role_and_target_preservation (test_data_preparation.DataChecks.test_seed_role_and_target_preservation) ... ok
+test_snr_and_shared_gain_prevent_clipping (test_data_preparation.DataChecks.test_snr_and_shared_gain_prevent_clipping) ... ok
+test_tsv_literal_quotes_and_real_resampling (test_data_preparation.DataChecks.test_tsv_literal_quotes_and_real_resampling) ... ok
+test_zero_energy_and_wrap (test_data_preparation.DataChecks.test_zero_energy_and_wrap) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.065s
+
+OK
