@@ -1,0 +1,18 @@
+{
+  "substitutions": 15,
+  "deletions": 0,
+  "insertions": 2,
+  "reference_words": 18,
+  "errors": 17,
+  "wer": 0.9444444444444444,
+  "loss": 2.5302146315574645,
+  "target_tokens": 40,
+  "examples": 2,
+  "scope": "validation_clean_step1",
+  "split": "validation",
+  "condition": "clean",
+  "prediction_file": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_smoke_20261025_135409\\validation_clean_step1_predictions.jsonl",
+  "seconds": 1.2190131000243127,
+  "generation_capped_examples": 0,
+  "metric_source": "free model.generate; never teacher-forced argmax"
+}

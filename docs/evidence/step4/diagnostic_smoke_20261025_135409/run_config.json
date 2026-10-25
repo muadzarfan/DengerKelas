@@ -1,0 +1,46 @@
+{
+  "run_id": "diagnostic_smoke_20261025_135409",
+  "kind": "diagnostic",
+  "seed": 20261025,
+  "device": "cpu",
+  "precision": "fp32",
+  "cpu_threads": 4,
+  "learning_rate": 1e-05,
+  "physical_batch_size": 1,
+  "gradient_accumulation": 2,
+  "epochs": 4,
+  "max_steps": 1,
+  "augmentation": "clean",
+  "weight_decay": 0.01,
+  "scheduler": "constant",
+  "warmup_ratio": 0.0,
+  "max_grad_norm": 1.0,
+  "gradient_checkpointing": false,
+  "eval_every_steps": 1,
+  "save_total_limit": 2,
+  "selection_metric": "validation_clean_generated_wer",
+  "generation_max_new_tokens": 96,
+  "train_metric_examples": 4,
+  "validation_conditions": [
+    "clean",
+    "15dB",
+    "5dB"
+  ],
+  "feature_cache_examples": 8,
+  "diagnostic_train_examples": 4,
+  "diagnostic_validation_examples": 2,
+  "resolved_device": "cpu",
+  "resolved_precision": "fp32",
+  "effective_batch_size": 2,
+  "train_recording_ids": [
+    "fleurs:id_id:train:10031305676668874797",
+    "fleurs:id_id:train:655540628841184633",
+    "fleurs:id_id:train:6426931729104663967",
+    "fleurs:id_id:train:3153536415786189267"
+  ],
+  "validation_recording_ids": [
+    "fleurs:id_id:dev:18260701511066956043",
+    "fleurs:id_id:dev:8845002768424838526"
+  ],
+  "scheduler_total_steps": 1
+}

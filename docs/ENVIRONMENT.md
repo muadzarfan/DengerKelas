@@ -1,6 +1,16 @@
 # Environment inventory and verification
 
-## Step 3 current environment — verified 2026-10-25
+## Step 4 current training environment — verified 2026-10-25
+
+The same `.venv` now contains **PyTorch 2.14.1+cpu**, Transformers 5.20.2 and the Step 3 audio/numeric stack. The official CPU wheel was installed into the project environment only; `pip check` passed. Actual installed versions: `requirements/step4-windows-py312-cpu.lock.txt`. Requirements for a new CPU environment: `requirements/training-cpu.txt`; portable training requirements use the compatible PyTorch version without forcing a CPU wheel.
+
+Actual execution used Windows 11, Python 3.12.14, Intel Core i5-13420H, 8 physical/12 logical cores, RAM 16,857,817,088 bytes, CPU fp32 and four PyTorch threads. Windows identified Intel UHD graphics; `torch.version.cuda=None`, `torch.cuda.is_available()=False`, no CUDA device/VRAM is available through this build/runtime. CUDA mixed precision and GPU training are not verified. Colab is an unexecuted path using the same modules, not claimed as tested.
+
+Real model forward/backward, full-parameter updates, tiny-overfit, generated metrics, save/reload in a new process and complete optimizer/scheduler/RNG/cursor resume passed. Exact figures and measured CPU compute/RSS are centralized in [STEP4_TRAINING_PIPELINE.md](STEP4_TRAINING_PIPELINE.md) and [evidence/step4](evidence/step4/README.md). All 20 Python regression checks passed, including the Step 2 streaming/transport checks. Gradio transport mounting stalled in the sandbox; host execution passed with existing benign event-loop warnings retained. The application source and streaming configuration were unchanged.
+
+Training weights are local in `data/checkpoints/whisper-tiny-training/`, independent of the Step 2 CTranslate2 model. Diagnostic checkpoints are under ignored `checkpoints/`. No full experiment or final test was executed. Model quality and full-experiment duration remain unestablished.
+
+## Step 3 environment at data preparation checkpoint — verified 2026-10-25
 
 The same project `.venv` and Python 3.12.14 were reused. Step 3 added Transformers 5.20.2, tokenizers 0.23.3 and Matplotlib 3.11.2. NumPy 2.5.4, SciPy 1.18.1 and SoundFile 0.14.0 supply waveform reading/resampling, features and numeric checks. `pip check` passed. Actual full installed versions are recorded in `requirements/step3-windows-py312.lock.txt`; the direct preparation requirements are in `requirements/data.txt`.
 

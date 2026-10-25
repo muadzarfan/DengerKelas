@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "eligible_train_validation_audio_verified": {
+    "train": 2538,
+    "validation": 345
+  },
+  "step3_verification_status": "passed",
+  "E2_example": {
+    "recording_id": "fleurs:id_id:train:10001176200525981995",
+    "same_seed_features_equal": true,
+    "target_unchanged": true,
+    "clean_features_and_source_hash_unchanged": true,
+    "noise_environment": "OOFFICE",
+    "applied": true,
+    "requested_snr_db": 14.864780041996013,
+    "measured_snr_db": 14.864780041996013,
+    "noise_gain": 1.1725668052765577,
+    "common_gain": 1.0,
+    "peak": 0.27058687806129456
+  },
+  "fixed_validation": [
+    {
+      "snr_db": 15,
+      "same_step3_recipe": true,
+      "length_preserved": true,
+      "target_unchanged": true
+    },
+    {
+      "snr_db": 5,
+      "same_step3_recipe": true,
+      "length_preserved": true,
+      "target_unchanged": true
+    }
+  ],
+  "test_loader_rejected": true,
+  "no_test_audio_or_features_opened": true,
+  "B_vs_E1_changed_fields": [
+    "learning_rate",
+    "run_id"
+  ],
+  "B_vs_E2_changed_fields": [
+    "augmentation",
+    "run_id"
+  ]
+}

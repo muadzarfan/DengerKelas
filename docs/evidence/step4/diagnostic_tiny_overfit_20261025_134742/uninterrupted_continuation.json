@@ -1,0 +1,24 @@
+{
+  "purpose": "two diagnostic continuation steps; not part of the overfit learning comparison",
+  "checkpoint_start": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_tiny_overfit_20261025_134742\\checkpoint-000024",
+  "step_seconds": [
+    0.9215565000195056,
+    0.9139765999861993
+  ],
+  "fingerprint": {
+    "model": "1aabb6e864dc7633528dd5fb37ed1a0dc24dc1e22787f3623f185dc515a7bb8e",
+    "optimizer": "997f877fdaacd612c43e8833a2f3c5872b92613d3ba6a7b9893fc18b3191ea44",
+    "scheduler": "40f5bb83575bcfdc4f9db2fb3c8f4efa9499e0dc7cfd2bfd8195d1cb4eb61882",
+    "progress": {
+      "epoch": 6,
+      "next_micro_batch": 2,
+      "global_step": 26,
+      "micro_step": 26,
+      "best_validation_wer": 0.9444444444444444,
+      "best_checkpoint": null
+    },
+    "torch_rng": "87fcde0cc149e7f55c1e99abbb1da9160ddd8494182c60199a5b2ae0b36374a3",
+    "numpy_rng": "0c985982c63d7b497f1136d2227bdecc7ee2cbf18e6ad425adfcb2e8c07cfc01",
+    "python_rng": "5608e8cad327d523dc706665b8519c0529ea0419c7acc8299ec2e51f332c5fb8"
+  }
+}

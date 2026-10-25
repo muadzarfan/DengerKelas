@@ -1,0 +1,18 @@
+{
+  "substitutions": 89,
+  "deletions": 3,
+  "insertions": 17,
+  "reference_words": 279,
+  "errors": 109,
+  "wer": 0.3906810035842294,
+  "loss": 0.8646089130536069,
+  "target_tokens": 688,
+  "examples": 16,
+  "scope": "train_subset_step2",
+  "split": "train",
+  "condition": "clean",
+  "prediction_file": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_cpu_pilot_20261025_135146\\train_subset_step2_predictions.jsonl",
+  "seconds": 16.6020550999674,
+  "generation_capped_examples": 0,
+  "metric_source": "free model.generate; never teacher-forced argmax"
+}

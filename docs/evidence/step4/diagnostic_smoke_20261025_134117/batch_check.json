@@ -1,0 +1,50 @@
+{
+  "tensors": {
+    "input_features": {
+      "shape": [
+        2,
+        80,
+        3000
+      ],
+      "dtype": "torch.float32",
+      "finite": true
+    },
+    "attention_mask": {
+      "shape": [
+        2,
+        3000
+      ],
+      "dtype": "torch.int64",
+      "finite": true
+    },
+    "labels": {
+      "shape": [
+        2,
+        20
+      ],
+      "dtype": "torch.int64",
+      "finite": true
+    }
+  },
+  "masked_tokens": 6,
+  "labels": [
+    {
+      "recording_id": "fleurs:id_id:train:10031305676668874797",
+      "duration_seconds": 3.48,
+      "valid_tokens": 14,
+      "decoded_label": "Tidak ada orang di dalam apartemen.",
+      "target_equal": true,
+      "eos_preserved": true,
+      "decoder_start_removed_once": true
+    },
+    {
+      "recording_id": "fleurs:id_id:train:655540628841184633",
+      "duration_seconds": 3.54,
+      "valid_tokens": 20,
+      "decoded_label": "\"Kami semua terkejut,\" ucap ibu tersebut.\"",
+      "target_equal": true,
+      "eos_preserved": true,
+      "decoder_start_removed_once": true
+    }
+  ]
+}

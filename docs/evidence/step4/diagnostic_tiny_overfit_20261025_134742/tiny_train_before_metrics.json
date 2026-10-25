@@ -1,0 +1,18 @@
+{
+  "substitutions": 14,
+  "deletions": 0,
+  "insertions": 4,
+  "reference_words": 26,
+  "errors": 18,
+  "wer": 0.6923076923076923,
+  "loss": 1.8204323657571453,
+  "target_tokens": 73,
+  "examples": 4,
+  "scope": "tiny_train_before",
+  "split": "train",
+  "condition": "clean",
+  "prediction_file": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_tiny_overfit_20261025_134742\\tiny_train_before_predictions.jsonl",
+  "seconds": 2.335160899965558,
+  "generation_capped_examples": 0,
+  "metric_source": "free model.generate; never teacher-forced argmax"
+}

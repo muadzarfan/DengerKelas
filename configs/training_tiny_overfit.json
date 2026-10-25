@@ -1,0 +1,11 @@
+{
+  "extends": "training_smoke.json",
+  "run_id": "diagnostic_tiny_overfit",
+  "learning_rate": 0.0001,
+  "gradient_accumulation": 1,
+  "max_steps": 48,
+  "eval_every_steps": 12,
+  "minimum_diagnostic_steps": 12,
+  "stop_train_wer": 0.05,
+  "stop_train_loss": 0.5
+}

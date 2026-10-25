@@ -1,0 +1,15 @@
+{
+  "extends": "training_B.json",
+  "run_id": "diagnostic_smoke",
+  "kind": "diagnostic",
+  "device": "cpu",
+  "precision": "fp32",
+  "physical_batch_size": 1,
+  "gradient_accumulation": 2,
+  "max_steps": 1,
+  "scheduler": "constant",
+  "warmup_ratio": 0.0,
+  "generation_max_new_tokens": 96,
+  "eval_every_steps": 1,
+  "train_metric_examples": 4
+}

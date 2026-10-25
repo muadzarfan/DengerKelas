@@ -1,0 +1,5 @@
+{
+  "extends": "training_cpu_B.json",
+  "run_id": "E1_cpu",
+  "learning_rate": 0.000005
+}

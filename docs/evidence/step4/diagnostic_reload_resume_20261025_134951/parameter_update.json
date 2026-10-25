@@ -1,0 +1,14 @@
+{
+  "loss_finite": true,
+  "all_trainable_gradients_present_finite": true,
+  "gradient_tensors_checked": 167,
+  "changed_parameter_tensors": 167,
+  "total_parameter_tensors": 167,
+  "max_abs_update_by_component": {
+    "model.encoder": 9.569386020302773e-05,
+    "model.decoder": 9.786523878574371e-05
+  },
+  "optimizer_step": 25,
+  "micro_batches_accumulated": 1,
+  "accumulation": "sum valid-token losses / valid tokens across group"
+}

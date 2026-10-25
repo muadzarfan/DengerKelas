@@ -1,8 +1,5 @@
--r core.txt
-# Add compatible, verified version constraints before installation.
-torch
-transformers
-datasets
-evaluate
-jiwer
-accelerate
+-r data.txt
+# Core loop uses PyTorch directly; no Trainer/datasets/evaluate dependency.
+# For the verified Windows CPU build use training-cpu.txt instead.
+torch==2.14.1
+psutil==7.2.2

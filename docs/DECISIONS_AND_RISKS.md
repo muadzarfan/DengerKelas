@@ -1,5 +1,28 @@
 # Decisions, assumptions, and risks
 
+## Step 4 decisions and verified changes
+
+- Used the existing Python 3.12 venv and added official CPU PyTorch. Actual hardware supports the completed CPU fp32 diagnostics; no CUDA device was available. Colab notebook uses the same code but is explicitly unexecuted.
+- Acquired only the missing official multilingual PyTorch weights at the Step 3 processor revision, with official SHA-256 verification. Reused actual source data/manifests; all eligible train/validation files were rechecked. Test audio/features were not opened.
+- Implemented a controlled PyTorch loop rather than adding Trainer/datasets/evaluate stacks. Full-model training includes every parameter; no adapter or frozen component. On-the-fly features and bounded LRU avoid whole-dataset feature duplication. Collator masks by tokenizer attention mask, preserves EOS, strips one decoder-start, and returns feature attention masks.
+- One language/task generation mechanism uses Indonesian/transcribe/no-timestamps; legacy forced IDs are removed. A single total decoder-length limit avoids conflicting max-length settings. WER comes from free generation and symmetric Step 3 scoring, never teacher-forced argmax.
+- Kept B/E1/E2 LR/audio differences and the same pretrained initialization. Added shared AdamW decay0.01, linear/5% warmup, gradient clipping1.0, clean-validation generated-WER selection, evaluation every epoch, best/latest retention2, and fixed32 train metric subset. CPU profiles reduce physical batch to1 and increase accumulation to16. Compare all conditions under one consistent profile.
+- Tiny-overfit LR1e-4, constant schedule and fixed four-short-example subset are diagnostic settings only. Clean audio and labels were unchanged. Learning was observed on those same examples; the two-example validation result was poor and is not hidden or treated as generalization.
+- Save/reload was checked in a new process. Complete optimizer/scheduler/scaler/RNG/sampler-cursor resume matched the uninterrupted diagnostic continuation. Diagnostic checkpoints remain separate from the unchanged Step 2 app.
+- Corrected an initial EOS/cap metadata check after discovering that Whisper tensor-only generation strips EOS. Preserved both preliminary runs and observed library warnings. Gradio mounting stalled in the sandbox; host regression passed. No full-condition experiments or final-test inference were run.
+- Source of counts, metrics, actual checkpoint location, sampled RSS, runtime and qualified Step 5 estimates: `STEP4_TRAINING_PIPELINE.md` and `evidence/step4/verification_summary.json`. No claim of trained model quality or final deployment readiness is made.
+
+## Step 4 remaining limits
+
+| Item | Actual status | Next action |
+|---|---|---|
+| Full-condition quality | Only bounded diagnostics exist | Run controlled B/E1/E2 and later locked evaluation; do not select on final test |
+| Compute | CPU effective16 pilot measured; GPU/precision/Colab unexecuted | Use measured CPU planning estimate or verify the actual GPU runtime first |
+| Diagnostic overfit | Train subset memorized; tiny validation poor | Keep as pipeline evidence, initialize full experiments from original pretrained weights |
+| Source data | Listening, representation/domain and DEMAND license limitations remain | Carry Step 3 caveats into experiments and reports |
+| Upstream generation warning | Internal suppression-token deprecation in pinned Transformers; explicit task/language and reload verified | Recheck API when upgrading, preserve version lock and actual warnings |
+| Recovery | Trusted local checkpoint state contains Python/NumPy objects | Resume only complete checkpoints from trusted runs; retain matching data/config/horizon |
+
 ## Step 3 decisions and actual findings
 
 - Kept the existing project and Python environment. Acquired only official FLEURS `id_id` archives/TSV and the three specified DEMAND 16 kHz environments, pinned in `configs/data_sources.json`. Download/checksum retries recovered observed failures. All requested artifacts are verified and reused on rerun.
@@ -41,7 +64,7 @@
 | Official assignment forms | Not present in inspected workspace; source section mapping is from pasted summary only | Obtain both `.docx` forms and verify all tables/selected and struck-out options |
 | Cross-course reuse | Administrative permission unknown | Ask both lecturers; keep reports distinct meanwhile |
 | Group rules, deadlines, packaging | Not fully specified | Confirm individually with each course; do not mistake 31 Aug 2026 verification date for deadline |
-| Python/runtime compatibility | Step 2 deployment verified with Python 3.12.14 and pinned installed stack | Verify training framework compatibility separately before training |
+| Python/runtime compatibility | Step 2 deployment and Step 4 CPU training diagnostics verified with Python 3.12.14 and pinned installed stacks | Verify a changed GPU/precision/runtime separately; preserve the app's deployment model |
 | Venv pip bootstrap | Step 1 failure resolved with environment-targeted pip and a Python 3.12 venv | Use the documented interpreter and installed lock |
 | Hardware/GPU access | CPU/RAM detected; CTranslate2 sees zero CUDA devices; CPU INT8 verified | Other hardware/GPU modes need their own check |
 | Streaming responsiveness | Bounded streaming verified in Step 2; transient lag/recognition errors remain | Broaden natural speech/noise evaluation and measure final trained-checkpoint performance |

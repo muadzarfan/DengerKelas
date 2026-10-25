@@ -4,3 +4,5 @@ configs/data_*.json -text
 data/manifests/*.json -text
 data/manifests/*.jsonl -text
 docs/evidence/step3/** -text
+configs/training*.json -text
+docs/evidence/step4/** -text

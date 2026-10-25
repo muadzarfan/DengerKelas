@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "new_process": true,
+  "checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_tiny_overfit_20261025_134742\\checkpoint-000024",
+  "reloaded_processor": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_tiny_overfit_20261025_134742\\checkpoint-000024",
+  "raw_generated_tokens_equal": true,
+  "references_equal": true,
+  "reloaded_loss": 0.0006660425322678909,
+  "reloaded_wer": 0.0,
+  "resume_start_progress": {
+    "epoch": 6,
+    "next_micro_batch": 0,
+    "global_step": 24,
+    "micro_step": 24,
+    "best_validation_wer": 0.9444444444444444,
+    "best_checkpoint": null
+  },
+  "resume_end_progress": {
+    "epoch": 6,
+    "next_micro_batch": 2,
+    "global_step": 26,
+    "micro_step": 26,
+    "best_validation_wer": 0.9444444444444444,
+    "best_checkpoint": null
+  },
+  "resume_optimizer_steps": 2,
+  "resume_step_seconds": [
+    0.9020612000022084,
+    0.8158446000306867
+  ],
+  "uninterrupted_vs_resumed": {
+    "model": true,
+    "optimizer": true,
+    "scheduler": true,
+    "progress": true,
+    "torch_rng": true,
+    "numpy_rng": true,
+    "python_rng": true
+  },
+  "full_state_bitwise_equal": true,
+  "resumed_checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_reload_resume_20261025_141555\\resumed-diagnostic-only",
+  "output": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_reload_resume_20261025_141555",
+  "no_final_test_access": true
+}

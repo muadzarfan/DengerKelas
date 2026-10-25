@@ -11,6 +11,7 @@ venv/
 .env
 .env.*
 !.env.example
+configs/*.local.json
 
 # Data, recordings, generated audio, and model weights
 data/raw/
@@ -24,6 +25,9 @@ data/checkpoints/**
 *.pth
 *.safetensors
 *.onnx
+checkpoints/
+*.bin
+*.ckpt
 
 # Caches and generated outputs
 .cache/

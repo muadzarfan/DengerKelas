@@ -1,0 +1,61 @@
+{
+  "scope": "tiny validation wiring diagnostic; not a clean/noisy project benchmark",
+  "checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_tiny_overfit_20261025_134742\\checkpoint-000024",
+  "examples_per_condition": 2,
+  "conditions": {
+    "clean": {
+      "substitutions": 10,
+      "deletions": 8,
+      "insertions": 0,
+      "reference_words": 18,
+      "errors": 18,
+      "wer": 1.0,
+      "loss": 3.8331030130386354,
+      "target_tokens": 40,
+      "examples": 2,
+      "scope": "smoke_validation_clean",
+      "split": "validation",
+      "condition": "clean",
+      "prediction_file": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_small_validation_20261025_141621\\clean_predictions.jsonl",
+      "seconds": 1.1482236000010744,
+      "generation_capped_examples": 0,
+      "metric_source": "free model.generate; never teacher-forced argmax"
+    },
+    "15dB": {
+      "substitutions": 10,
+      "deletions": 8,
+      "insertions": 0,
+      "reference_words": 18,
+      "errors": 18,
+      "wer": 1.0,
+      "loss": 3.8396474838256838,
+      "target_tokens": 40,
+      "examples": 2,
+      "scope": "smoke_validation_15dB",
+      "split": "validation",
+      "condition": "15dB",
+      "prediction_file": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_small_validation_20261025_141621\\15dB_predictions.jsonl",
+      "seconds": 1.1867286000051536,
+      "generation_capped_examples": 0,
+      "metric_source": "free model.generate; never teacher-forced argmax"
+    },
+    "5dB": {
+      "substitutions": 11,
+      "deletions": 7,
+      "insertions": 0,
+      "reference_words": 18,
+      "errors": 18,
+      "wer": 1.0,
+      "loss": 4.334581661224365,
+      "target_tokens": 40,
+      "examples": 2,
+      "scope": "smoke_validation_5dB",
+      "split": "validation",
+      "condition": "5dB",
+      "prediction_file": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_small_validation_20261025_141621\\5dB_predictions.jsonl",
+      "seconds": 1.072944599960465,
+      "generation_capped_examples": 0,
+      "metric_source": "free model.generate; never teacher-forced argmax"
+    }
+  }
+}

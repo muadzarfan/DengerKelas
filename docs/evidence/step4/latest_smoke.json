@@ -1,0 +1,66 @@
+{
+  "status": "completed",
+  "diagnostic_only": true,
+  "run_id": "diagnostic_smoke_20261025_135409",
+  "train_examples": 4,
+  "validation_examples": 2,
+  "train_metric_examples": 4,
+  "progress": {
+    "epoch": 0,
+    "next_micro_batch": 2,
+    "global_step": 1,
+    "micro_step": 2,
+    "best_validation_wer": 0.9444444444444444,
+    "best_checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_smoke_20261025_135409\\checkpoint-000001"
+  },
+  "evaluations": [
+    {
+      "step": 1,
+      "train": {
+        "substitutions": 14,
+        "deletions": 0,
+        "insertions": 3,
+        "reference_words": 26,
+        "errors": 17,
+        "wer": 0.6538461538461539,
+        "loss": 1.463764154747741,
+        "target_tokens": 73,
+        "examples": 4,
+        "scope": "train_subset_step1",
+        "split": "train",
+        "condition": "clean",
+        "prediction_file": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_smoke_20261025_135409\\train_subset_step1_predictions.jsonl",
+        "seconds": 2.344080600014422,
+        "generation_capped_examples": 0,
+        "metric_source": "free model.generate; never teacher-forced argmax"
+      },
+      "validation_clean": {
+        "substitutions": 15,
+        "deletions": 0,
+        "insertions": 2,
+        "reference_words": 18,
+        "errors": 17,
+        "wer": 0.9444444444444444,
+        "loss": 2.5302146315574645,
+        "target_tokens": 40,
+        "examples": 2,
+        "scope": "validation_clean_step1",
+        "split": "validation",
+        "condition": "clean",
+        "prediction_file": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_smoke_20261025_135409\\validation_clean_step1_predictions.jsonl",
+        "seconds": 1.2190131000243127,
+        "generation_capped_examples": 0,
+        "metric_source": "free model.generate; never teacher-forced argmax"
+      },
+      "validation_noise": {}
+    }
+  ],
+  "optimizer_step_seconds": [
+    1.64983430004213
+  ],
+  "elapsed_seconds": 6.502213900035713,
+  "checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_smoke_20261025_135409\\checkpoint-000001",
+  "output": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_smoke_20261025_135409",
+  "no_final_test_access": true,
+  "pretrained_initialization": "same pinned openai/whisper-tiny"
+}

@@ -1,0 +1,8 @@
+{
+  "extends": "training_B.json",
+  "run_id": "B_cpu",
+  "device": "cpu",
+  "precision": "fp32",
+  "physical_batch_size": 1,
+  "gradient_accumulation": 16
+}

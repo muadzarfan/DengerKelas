@@ -1,0 +1,50 @@
+{
+  "tensors": {
+    "input_features": {
+      "shape": [
+        2,
+        80,
+        3000
+      ],
+      "dtype": "torch.float32",
+      "finite": true
+    },
+    "attention_mask": {
+      "shape": [
+        2,
+        3000
+      ],
+      "dtype": "torch.int64",
+      "finite": true
+    },
+    "labels": {
+      "shape": [
+        2,
+        44
+      ],
+      "dtype": "torch.int64",
+      "finite": true
+    }
+  },
+  "masked_tokens": 2,
+  "labels": [
+    {
+      "recording_id": "fleurs:id_id:train:2474337725380659697",
+      "duration_seconds": 13.2,
+      "valid_tokens": 44,
+      "decoded_label": "Anak-anak tidak seharusnya tumbuh dalam lingkungan yang tidak mengasuh, merawat, dan mengedukasi, tetapi kenyataannya seperti itu.",
+      "target_equal": true,
+      "eos_preserved": true,
+      "decoder_start_removed_once": true
+    },
+    {
+      "recording_id": "fleurs:id_id:train:2582711271321154013",
+      "duration_seconds": 13.02,
+      "valid_tokens": 42,
+      "decoded_label": "CEO Apple, Steve Jobs memperkenalkan iPhone dengan berjalan naik ke panggung lalu mengeluarkan perangkat ini dari saku jinnya.",
+      "target_equal": true,
+      "eos_preserved": true,
+      "decoder_start_removed_once": true
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 **Noise Augmentation and Transcript Stability for Local Real-Time Indonesian Lecture Captioning**
 
-Local Indonesian captions for one nearby speaker, one microphone, and one laptop. Step 2 uses the **unmodified pretrained multilingual Whisper Tiny feasibility baseline**: an upstream CTranslate2 conversion of `openai/whisper-tiny`, executed locally with CPU INT8. No project fine-tuning has occurred.
+Local Indonesian captions for one nearby speaker, one microphone, and one laptop. The Step 2 app uses the **unmodified pretrained multilingual Whisper Tiny feasibility baseline**: an upstream CTranslate2 conversion of `openai/whisper-tiny`, executed locally with CPU INT8. Step 4 separately performed short full-model training diagnostics; these checkpoints are not installed in the app or presented as final models.
 
 ## Current status
 
@@ -10,7 +10,9 @@ Local Indonesian captions for one nearby speaker, one microphone, and one laptop
 
 **Step 3 data preparation: complete and verified.** Indonesian FLEURS official splits and the three assigned DEMAND environments are downloaded, audited and represented in reproducible manifests. See the [dataset card](docs/DATASET_CARD.md), [sources/licenses](docs/DATA_SOURCES_AND_LICENSES.md), [execution report](docs/STEP3_DATA_PREPARATION.md), and [preserved evidence](docs/evidence/step3/README.md). Manual listening review remains pending; semantic audio/label alignment is not established by numeric checks.
 
-Training, formal WER/CER/noise experiments, agreement-based stabilization and the five-user study remain later work. Neither course assignment is complete. Official assignment forms are still unavailable for direct verification; cross-course administrative questions remain open.
+**Step 4 training pipeline: complete within CPU diagnostic scope.** Real batch/forward/backward/parameter updates, tiny-subset learning, generated validation metrics, checkpoint reload and full-state resume were executed. See the [training pipeline report](docs/STEP4_TRAINING_PIPELINE.md) and [actual evidence](docs/evidence/step4/README.md). The report contains measured compute estimates and the B/E1/E2 configurations. Colab/CUDA remain untested.
+
+Full B/E1/E2 training, formal WER/CER/noise benchmarks, agreement-based stabilization and the five-user study remain later work. Neither course assignment is complete. Official assignment forms are still unavailable for direct verification; cross-course administrative questions remain open.
 
 ## Launch on this computer
 
@@ -44,6 +46,23 @@ Edit `configs/streaming.json` to configure model/runtime/streaming. Environment 
 
 ## Verification
 
+### Step 4 training diagnostics
+
+The current `.venv` includes verified CPU PyTorch dependencies. Use `requirements/training-cpu.txt` for a fresh CPU installation; the actual Windows lock is `requirements/step4-windows-py312-cpu.lock.txt`. Existing data is reused. If training weights are missing, run `python -m src.training.assets` using the project interpreter.
+
+```powershell
+.\.venv\Scripts\python.exe -m src.training.verify_data
+.\.venv\Scripts\python.exe -u -m src.training.run --config configs/training_smoke.json
+.\.venv\Scripts\python.exe -u -m src.training.run --config configs/training_tiny_overfit.json
+.\.venv\Scripts\python.exe -u -m src.training.reload
+.\.venv\Scripts\python.exe -u -m src.evaluation.small
+.\.venv\Scripts\python.exe -u -m src.training.run --config configs/training_cpu_pilot.json
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v 2>&1 | Tee-Object -FilePath results/step4/all_python_checks.txt
+.\.venv\Scripts\python.exe -m src.training.report
+```
+
+Diagnostics use only train/validation. Full experiments require the explicit `--allow-experiment` flag and have not been run. The unexecuted Colab notebook in `notebooks/step4_colab.ipynb` calls the same modules. Checkpoints stay local under `checkpoints/`; source review evidence under `docs/evidence/step4/` excludes weights and optimizer tensors.
+
 ### Step 3 data pipeline
 
 From this project root, in the existing Python 3.12 environment:
@@ -76,10 +95,11 @@ The development panel also offers short and sustained browser replays. These use
 - `src/streaming/`: stateful resampling, local runtime, bounded audio, one worker and timestamp merge.
 - `src/evaluation/`: provenance, paced replay, summaries, offline probe and inventory.
 - `src/data/`: resumable acquisition, safe extraction, audit, preprocessing, noise recipes, verification and factual documentation.
+- `src/training/`: manifest adapter/collator, training, complete checkpoints/resume and diagnostics; generated metrics in `src/evaluation/generated.py`.
 - `configs/`, `requirements/`, `tests/`: settings, verified dependencies and focused checks.
 - `data/manifests/`: public provenance; recordings and model weights are excluded.
 - `docs/`, `reports/`: planning, findings, AI log and separate course report outlines.
 
 ## Next checkpoint
 
-Step 4: build and verify the training pipeline using the eligible subsets and fixed definitions in Step 3. Install/verify the training framework, then check dataloader/batching/loss before starting experiments. Keep the Step 2 training fixture out of independent final evaluation. No fine-tuning has occurred.
+Step 5: run the controlled B/E1/E2 experiments from the same pinned pretrained weights and consistent hardware/profile. Follow the Step 4 measured compute budget and validation-only selection policy. Keep the Step 2 training fixture out of independent final evaluation; final test remains locked. Tiny-overfit proves pipeline learning, not generalization.

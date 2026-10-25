@@ -1,0 +1,5 @@
+{
+  "extends": "training_cpu_B.json",
+  "run_id": "E2_cpu",
+  "augmentation": "E2"
+}

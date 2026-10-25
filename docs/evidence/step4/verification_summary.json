@@ -1,0 +1,236 @@
+{
+  "status": "complete",
+  "scope": "Step 4 diagnostics only; no full B/E1/E2, no final test",
+  "hardware": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "os": "Windows-11-10.0.26200-SP0",
+    "cpu": "13th Gen Intel(R) Core(TM) i5-13420H",
+    "physical_cores": 8,
+    "logical_cores": 12,
+    "ram_bytes": 16857817088,
+    "available_ram_bytes": 4206501888,
+    "versions": {
+      "torch": "2.14.1+cpu",
+      "transformers": "5.20.2",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "soundfile": "0.14.0",
+      "safetensors": "0.8.0"
+    },
+    "torch_cuda_build": null,
+    "cuda_available": false,
+    "gpus": [],
+    "cpu_threads": 4,
+    "cpu_precision_used": "fp32",
+    "cuda_bf16_supported": false
+  },
+  "model": {
+    "total": 37760640,
+    "trainable": 37760640,
+    "frozen_names": [],
+    "encoder_layers": 4,
+    "decoder_layers": 4,
+    "d_model": 384,
+    "encoder_attention_heads": 6,
+    "decoder_attention_heads": 6,
+    "generation_language": "id",
+    "task": "transcribe",
+    "forced_decoder_ids": null,
+    "prefix_ids": [
+      50258,
+      50275,
+      50359,
+      50363
+    ]
+  },
+  "smoke": {
+    "run_id": "diagnostic_smoke_20261025_135409",
+    "loss_finite": true,
+    "all_trainable_gradients_present_finite": true,
+    "gradient_tensors_checked": 167,
+    "changed_parameter_tensors": 167,
+    "total_parameter_tensors": 167,
+    "max_abs_update_by_component": {
+      "model.encoder": 1.0132789611816406e-05,
+      "model.decoder": 1.1444091796875e-05
+    },
+    "optimizer_step": 1,
+    "micro_batches_accumulated": 2,
+    "accumulation": "sum valid-token losses / valid tokens across group"
+  },
+  "overfit": {
+    "run_id": "diagnostic_tiny_overfit_20261025_134742",
+    "examples": 4,
+    "optimizer_steps": 24,
+    "elapsed_seconds": 32.93398159998469,
+    "initial_loss": 1.8204323657571453,
+    "final_loss": 0.0006660425322678909,
+    "initial_generated_wer": 0.6923076923076923,
+    "final_generated_wer": 0.0,
+    "checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_tiny_overfit_20261025_134742\\checkpoint-000024"
+  },
+  "tiny_validation": {
+    "examples": 2,
+    "loss": 3.8331030130386354,
+    "generated_wer": 1.0,
+    "scope": "two distinct validation examples, not whole-split quality evidence"
+  },
+  "reload_resume": {
+    "status": "passed",
+    "new_process": true,
+    "checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_tiny_overfit_20261025_134742\\checkpoint-000024",
+    "reloaded_processor": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_tiny_overfit_20261025_134742\\checkpoint-000024",
+    "raw_generated_tokens_equal": true,
+    "references_equal": true,
+    "reloaded_loss": 0.0006660425322678909,
+    "reloaded_wer": 0.0,
+    "resume_start_progress": {
+      "epoch": 6,
+      "next_micro_batch": 0,
+      "global_step": 24,
+      "micro_step": 24,
+      "best_validation_wer": 0.9444444444444444,
+      "best_checkpoint": null
+    },
+    "resume_end_progress": {
+      "epoch": 6,
+      "next_micro_batch": 2,
+      "global_step": 26,
+      "micro_step": 26,
+      "best_validation_wer": 0.9444444444444444,
+      "best_checkpoint": null
+    },
+    "resume_optimizer_steps": 2,
+    "resume_step_seconds": [
+      0.9020612000022084,
+      0.8158446000306867
+    ],
+    "uninterrupted_vs_resumed": {
+      "model": true,
+      "optimizer": true,
+      "scheduler": true,
+      "progress": true,
+      "torch_rng": true,
+      "numpy_rng": true,
+      "python_rng": true
+    },
+    "full_state_bitwise_equal": true,
+    "resumed_checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_reload_resume_20261025_141555\\resumed-diagnostic-only",
+    "output": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\step4\\diagnostic_reload_resume_20261025_141555",
+    "no_final_test_access": true
+  },
+  "augmentation_and_data": {
+    "status": "passed",
+    "eligible_train_validation_audio_verified": {
+      "train": 2538,
+      "validation": 345
+    },
+    "step3_verification_status": "passed",
+    "E2_example": {
+      "recording_id": "fleurs:id_id:train:10001176200525981995",
+      "same_seed_features_equal": true,
+      "target_unchanged": true,
+      "clean_features_and_source_hash_unchanged": true,
+      "noise_environment": "OOFFICE",
+      "applied": true,
+      "requested_snr_db": 14.864780041996013,
+      "measured_snr_db": 14.864780041996013,
+      "noise_gain": 1.1725668052765577,
+      "common_gain": 1.0,
+      "peak": 0.27058687806129456
+    },
+    "fixed_validation": [
+      {
+        "snr_db": 15,
+        "same_step3_recipe": true,
+        "length_preserved": true,
+        "target_unchanged": true
+      },
+      {
+        "snr_db": 5,
+        "same_step3_recipe": true,
+        "length_preserved": true,
+        "target_unchanged": true
+      }
+    ],
+    "test_loader_rejected": true,
+    "no_test_audio_or_features_opened": true,
+    "B_vs_E1_changed_fields": [
+      "learning_rate",
+      "run_id"
+    ],
+    "B_vs_E2_changed_fields": [
+      "augmentation",
+      "run_id"
+    ]
+  },
+  "python_regression_checks": {
+    "count": 20,
+    "passed": true
+  },
+  "pilot": {
+    "run_id": "diagnostic_cpu_pilot_20261025_135146",
+    "examples": 16,
+    "physical_batch_size": 1,
+    "gradient_accumulation": 16,
+    "effective_batch": 16,
+    "optimizer_steps": 2,
+    "optimizer_step_seconds": [
+      14.479751500010025,
+      13.703705099993385
+    ],
+    "max_observed_rss_bytes": 1375739904
+  },
+  "compute_estimate": {
+    "profile": "same local CPU fp32, physical 1 accumulation 16; not measured GPU speed",
+    "train_examples": 2538,
+    "epochs": 4,
+    "optimizer_steps_per_run": 636,
+    "core_training_hours_per_run": [
+      2.4209879009988313,
+      2.5580894316684377
+    ],
+    "core_training_hours_three_runs": [
+      7.262963702996494,
+      7.674268295005313
+    ],
+    "generated_eval_examples_per_epoch": 1067,
+    "observed_eval_seconds_per_example": [
+      1.0376284437479626,
+      0.7950066500052344
+    ],
+    "illustrative_total_hours_per_run": [
+      3.363512451616148,
+      3.7882555977563
+    ],
+    "caveat": "Small two-update pilot; length/noise/thermal contention, generation caps, I/O and checkpoint costs can change full duration. First pilot step overlapped lightweight integration checks; second is the steadier observation."
+  },
+  "actual_diagnostic_work": {
+    "all_recorded_optimizer_updates": 58,
+    "all_recorded_micro_batches": 90,
+    "all_recorded_training_example_presentations": 90,
+    "primary_evidence_updates": 31,
+    "description": "Includes two earlier development runs, final smoke, selected overfit, uninterrupted continuation, resume and effective-batch pilot; all are diagnostic."
+  },
+  "limitations": [
+    "No model-quality/generalization conclusion",
+    "No final test accessed",
+    "CUDA/mixed precision and Colab not executed",
+    "Manual listening from Step 3 remains pending",
+    "Read-speech/gender/encoding and DEMAND license limitations remain"
+  ],
+  "completion_checks": {
+    "real_manifest_audio": true,
+    "batch_features_labels": true,
+    "finite_forward_backward_and_update": true,
+    "tiny_subset_learning": true,
+    "generated_validation_metric": true,
+    "save_reload_new_process": true,
+    "complete_resume": true,
+    "controlled_B_E1_E2_configs": true,
+    "final_test_guard": true,
+    "diagnostic_labels": true,
+    "compute_measured": true,
+    "regression_checks": true
+  }
+}

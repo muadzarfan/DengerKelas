@@ -1,0 +1,5 @@
+{
+  "extends": "training_B.json",
+  "run_id": "E2",
+  "augmentation": "E2"
+}

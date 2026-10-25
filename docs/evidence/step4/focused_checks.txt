@@ -1,0 +1,9 @@
+test_configs_effective_batch_and_controlled_variables (test_training_pipeline.TrainingChecks.test_configs_effective_batch_and_controlled_variables) ... ok
+test_final_test_and_excluded_rows_rejected (test_training_pipeline.TrainingChecks.test_final_test_and_excluded_rows_rejected) ... ok
+test_real_collator_masks_padding_preserves_eos (test_training_pipeline.TrainingChecks.test_real_collator_masks_padding_preserves_eos) ... ok
+test_wer_counts_and_symmetric_normalization (test_training_pipeline.TrainingChecks.test_wer_counts_and_symmetric_normalization) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.292s
+
+OK

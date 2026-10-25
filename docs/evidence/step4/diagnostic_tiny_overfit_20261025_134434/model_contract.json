@@ -1,0 +1,19 @@
+{
+  "total": 37760640,
+  "trainable": 37760640,
+  "frozen_names": [],
+  "encoder_layers": 4,
+  "decoder_layers": 4,
+  "d_model": 384,
+  "encoder_attention_heads": 6,
+  "decoder_attention_heads": 6,
+  "generation_language": "id",
+  "task": "transcribe",
+  "forced_decoder_ids": null,
+  "prefix_ids": [
+    50258,
+    50275,
+    50359,
+    50363
+  ]
+}

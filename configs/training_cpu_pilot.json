@@ -1,0 +1,11 @@
+{
+  "extends": "training_smoke.json",
+  "run_id": "diagnostic_cpu_pilot",
+  "learning_rate": 0.00001,
+  "physical_batch_size": 1,
+  "gradient_accumulation": 16,
+  "diagnostic_train_examples": 16,
+  "max_steps": 2,
+  "eval_every_steps": 2,
+  "generation_max_new_tokens": 160
+}
