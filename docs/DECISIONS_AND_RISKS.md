@@ -1,5 +1,9 @@
 # Decisions, assumptions, and risks
 
+## Audit 2026-10-27
+
+The current stage/status is centralized in [PROJECT_STATUS.md](../PROJECT_STATUS.md). Original Step 3/4 evidence remains unchanged. Real resume/integrity/evaluation-boundary gaps were fixed and covered by regression tests plus an isolated schema2 recovery check. No experiment design (B/E1/E2 LR/audio, split, seed, scoring rule or final-test policy) was changed. The user's newer ignore rules were preserved and the stopped local server restarted. Audit changes remain local; full experiments and new hardware routes still require their own execution/evidence.
+
 ## Step 4 decisions and verified changes
 
 - Used the existing Python 3.12 venv and added official CPU PyTorch. Actual hardware supports the completed CPU fp32 diagnostics; no CUDA device was available. Colab notebook uses the same code but is explicitly unexecuted.

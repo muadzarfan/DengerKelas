@@ -15,6 +15,8 @@ B/E1/E2 are the baseline plus two changed conditions for Deep Learning. Common s
 
 ## Step 4 fixed procedure for Step 5
 
+Audit 27 October 2026 preserved this design. Resume now checks ordered example lists and decoding/evaluation settings, preserves the original evaluation grid and scheduler horizon, and verifies artifact/noise hashes at use time. Diagnostics cannot select a best project model or silently expand into a full-run budget. These safeguards do not change the planned experiment variables. See [current status](../PROJECT_STATUS.md).
+
 - Seed 20261025; AdamW eps1e-8; weight decay0.01 on matrices, zero on biases/normalization vectors; linear scheduler with 5% warmup; max gradient norm1.0. These new shared choices control regularization/schedule and keep the procedure simple.
 - Evaluate every159 optimizer steps (one current full epoch). Select lowest **clean validation generated corpus WER**, earliest checkpoint on ties. No test-driven choices. Retain best and latest checkpoints, maximum2; maximum4epochs, no experiment early stopping.
 - Log token-weighted training CE, validation CE and free-generation WER. Training metric uses a fixed32-example hash-selected train subset; label it as a subset. Evaluate all eligible validation records on clean/OHALLWAY15/5dB. Scoring normalization is the Step 3 function applied symmetrically. Keep raw/normalized predictions and references.

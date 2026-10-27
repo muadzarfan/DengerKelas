@@ -46,6 +46,18 @@ This log begins with the Step 1 planning/setup assistance. Update it during deve
 | Scope and integrity | All training was explicitly diagnostic. Poor tiny validation is reported alongside memorization. No full B/E1/E2, P0 benchmark, final-test inference/tuning, hosted ASR, application replacement, fabricated user feedback or five-user study. Colab/CUDA/mixed precision is not claimed as executed. Raw data/weights/checkpoints/caches/private microphone events stay outside Git. |
 | Factual evidence | Counts, run IDs, logs, metric pairs, parameter updates, complete-resume comparison and compute estimates have a single summary in `results/step4/verification_summary.json` with a review snapshot in `docs/evidence/step4/`; source numbers are not illustrative. |
 
-## Ongoing report fields for later work
+## Audit and fixes — 2026-10-27
+
+| Field | Record |
+|---|---|
+| Request | Recheck completed work against the agreed plan, consolidate progress and fix actual inconsistencies |
+| Findings | Local technical work ends at Step 4 CPU diagnostics, not full B/E1/E2. Two regressions reproduced missing resume locks for example order and evaluation settings. Additional gaps were use-time noise/model integrity, complete NumPy RNG fingerprinting, evaluation-grid recovery and stale status text. The localhost server was stopped. GitHub had an additional user commit changing ignore rules. |
+| Fixes | Expanded resume contract with checksummed legacy run_config compatibility; preserved original evaluation boundaries and experiment horizon; bounded computed diagnostic budget; added use-time artifact/noise validation and combined-processor compatibility; full RNG fingerprint schema2; limited best-model selection to experiment runs; consolidated PROJECT_STATUS.md and corrected Colab/current-status wording; restarted the local app. |
+| Verification | Thirty Python tests and pip check passed; all 21 official artifacts and 3,616 waveforms rechecked; historical report/source hashes and Step 3 locks preserved. Migrated the old diagnostic checkpoint, then compared two reference updates against two updates resumed in a new process under schema2. Raw generated tokens and all compared state fingerprints matched. App health reported model_ready=true. |
+| Scope | No full experiments, final-test ASR/tuning, new human microphone confirmation, user-study feedback or model-quality claims. Four audit-only optimizer updates were isolated from the old Step 4 evidence. Existing dataset/listening/representation/license limitations remain. |
+| Repository/user changes | Fetched and fast-forwarded the user's 2020553 ignore update. Kept docs/ and PromptDengarKelas.md exclusions. At audit completion, patches and new evidence were local. The user subsequently explicitly requested publication of the audit fixes, documentation and status; only the selected audit folder is added despite docs/ being ignored. Raw audio/weights/checkpoints/caches and private prompts remain excluded. No destructive cleanup occurred. |
+| Human review | User should review the consolidated progress, code fixes and future compute/study decisions. Administrative course confirmation and listening review have not been invented or marked completed. |
+
+## Fields for the next contribution
 
 For each later AI-assisted contribution, add date, tool/model, purpose, concise prompt summary, output used, exact files/code/report portions affected, how the student verified correctness, changes/rejections after review, and whether any claim or result needs independent evidence. Never use generated text as user feedback or experimental results.

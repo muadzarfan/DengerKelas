@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-27",
+  "status": "passed",
+  "stage_reached": "Step 4 CPU pipeline verification",
+  "next_stage": "Step 5 full controlled B/E1/E2; not started",
+  "python_tests": 30,
+  "data": {
+    "date": "2026-10-27",
+    "base_commit": "def24cf1747dcb08d826211ec35dc3ba792aca64",
+    "scope": "integrity only; no final-test ASR, tuning or listening",
+    "official_artifacts": {
+      "checked": 21,
+      "failed": []
+    },
+    "speech": {
+      "train": {
+        "total": 2579,
+        "eligible": 2538,
+        "excluded": 41,
+        "seconds": 32736.84
+      },
+      "validation": {
+        "total": 350,
+        "eligible": 345,
+        "excluded": 5,
+        "seconds": 4173.12
+      },
+      "test": {
+        "total": 687,
+        "eligible": 678,
+        "excluded": 9,
+        "seconds": 8515.44
+      }
+    },
+    "speech_integrity": {
+      "waveforms_decoded": 3616,
+      "failures": []
+    },
+    "noise_roles": {
+      "train": "OOFFICE",
+      "validation": "OHALLWAY",
+      "test": "PCAFETER"
+    },
+    "historical_evidence": {
+      "report_hashes_verified": 124,
+      "source_hashes_verified_against_original_commit": 25,
+      "working_source_changes_since_step4": [
+        "src/training/checkpoint.py",
+        "src/training/config.py",
+        "src/training/data.py",
+        "src/training/model.py",
+        "src/training/reload.py",
+        "src/training/run.py"
+      ],
+      "step3_locks_preserved": true
+    },
+    "git": {
+      "tracked_forbidden_artifacts": [],
+      "full_experiment_directories": []
+    },
+    "status": "passed",
+    "failures": [],
+    "elapsed_seconds": 30.64496700000018
+  },
+  "resume": {
+    "status": "passed",
+    "new_process": true,
+    "checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\audit_resume_reference_20261027_143645\\schema2-migrated-diagnostic-only",
+    "reloaded_processor": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\audit_resume_reference_20261027_143645\\schema2-migrated-diagnostic-only",
+    "raw_generated_tokens_equal": true,
+    "references_equal": true,
+    "reloaded_loss": 0.0006660425322678909,
+    "reloaded_wer": 0.0,
+    "resume_start_progress": {
+      "epoch": 6,
+      "next_micro_batch": 0,
+      "global_step": 24,
+      "micro_step": 24,
+      "best_validation_wer": 0.9444444444444444,
+      "best_checkpoint": null
+    },
+    "resume_end_progress": {
+      "epoch": 6,
+      "next_micro_batch": 2,
+      "global_step": 26,
+      "micro_step": 26,
+      "best_validation_wer": 0.9444444444444444,
+      "best_checkpoint": null
+    },
+    "resume_optimizer_steps": 2,
+    "resume_step_seconds": [
+      2.980251400033012,
+      5.894457799964584
+    ],
+    "uninterrupted_vs_resumed": {
+      "model": true,
+      "optimizer": true,
+      "scheduler": true,
+      "progress": true,
+      "torch_rng": true,
+      "numpy_rng": true,
+      "python_rng": true,
+      "schema_version": true,
+      "cuda_rng": true
+    },
+    "full_state_bitwise_equal": true,
+    "fingerprint_schema": 2,
+    "resume_contract_schema": 2,
+    "resumed_checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_reload_resume_20261027_143758\\resumed-diagnostic-only",
+    "output": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\audit_20261027\\diagnostic_reload_resume_20261027_143758",
+    "no_final_test_access": true
+  },
+  "app_health": {
+    "model_ready": true,
+    "error": null,
+    "runtime": {
+      "faster_whisper": "1.2.1",
+      "ctranslate2": "4.8.3",
+      "cuda_devices": 0,
+      "model_path": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\data\\checkpoints\\whisper-tiny-ct2",
+      "device": "cpu",
+      "compute_type": "int8"
+    }
+  },
+  "pinned_model_integrity": {
+    "status": "passed",
+    "scope": "pinned processor, multilingual weight SHA256 and configs"
+  },
+  "pip_check": "passed",
+  "new_diagnostic_updates": 4,
+  "full_experiments_run": false,
+  "final_test_asr_run": false,
+  "local_HEAD": "20205532cf1e3c6bdece17ae3123b59b4fb2b9c9",
+  "fetched_remote_main": "20205532cf1e3c6bdece17ae3123b59b4fb2b9c9",
+  "remote_ignore_rules_preserved": [
+    "docs/",
+    "PromptDengarKelas.md"
+  ],
+  "historical_step3_step4_evidence_modified": false,
+  "pending": [
+    "Manual train/validation listening review",
+    "Full B/E1/E2 and final evaluation",
+    "Checkpoint deployment and agreement-based stabilization",
+    "Five real target users and final course reports",
+    "Lecturer administrative confirmation",
+    "GPU/Colab verification if a GPU route is chosen"
+  ],
+  "fixes": [
+    "Resume locks ordered example IDs and evaluation/decoding settings",
+    "Resume preserves the evaluation grid and rejects experiment horizon changes",
+    "Noise/processor/pretrained/checkpoint checksums verified before use",
+    "Full NumPy RNG state and CUDA-state presence included in fingerprint schema 2",
+    "Diagnostic runs do not select a best project model",
+    "Computed diagnostic budget is bounded, including max_steps=0",
+    "Stale status/Colab wording corrected and local server restarted",
+    "Remote ignore update synchronized without undoing it"
+  ]
+}

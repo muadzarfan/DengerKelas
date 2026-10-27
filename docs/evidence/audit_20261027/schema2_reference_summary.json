@@ -1,0 +1,26 @@
+{
+  "checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\audit_resume_reference_20261027_143645\\schema2-migrated-diagnostic-only",
+  "output": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\audit_20261027\\audit_resume_reference_20261027_143645",
+  "evaluations": [
+    {
+      "train": {
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "reference_words": 26,
+        "errors": 0,
+        "wer": 0.0,
+        "loss": 0.0006660425322678909,
+        "target_tokens": 73,
+        "examples": 4,
+        "scope": "audit_train_before",
+        "split": "train",
+        "condition": "clean",
+        "prediction_file": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\audit_20261027\\audit_resume_reference_20261027_143645\\audit_train_before_predictions.jsonl",
+        "seconds": 8.543380300048739,
+        "generation_capped_examples": 0,
+        "metric_source": "free model.generate; never teacher-forced argmax"
+      }
+    }
+  ]
+}

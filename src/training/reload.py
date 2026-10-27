@@ -10,7 +10,7 @@ from .engine import Engine
 from .checkpoint import state_fingerprint
 
 
-def verify(summary_path):
+def verify(summary_path,output_root=None,result_path=None):
     summary=read_json(summary_path)
     checkpoint=Path(summary['checkpoint'])
     cfg=setup(read_json(checkpoint/'run_config.json'))
@@ -18,7 +18,8 @@ def verify(summary_path):
     proc=load_processor(checkpoint)
     index={r['recording_id']:r for r in records('train')}
     train=SpeechDataset([index[i] for i in cfg['train_recording_ids']],proc,'clean',cache_examples=8)
-    engine=Engine(cfg,proc,train,ROOT/'results/step4'/cfg['run_id'],resume=checkpoint)
+    output_root=Path(output_root) if output_root else ROOT/'results/step4'
+    engine=Engine(cfg,proc,train,output_root/cfg['run_id'],resume=checkpoint)
     before_progress=engine.progress.copy()
     original=summary['evaluations'][-1]['train']
     metric=engine.evaluate(train,'reloaded_train',str(checkpoint))
@@ -30,8 +31,9 @@ def verify(summary_path):
     assert abs(original['loss']-metric['loss'])<1e-7
     assert original['wer']==metric['wer']
     trained=engine.train_to(before_progress['global_step']+2,verify_update=True)
-    state=state_fingerprint(engine.model,engine.optimizer,engine.scheduler,engine.progress)
     reference=read_json(Path(summary['output'])/'uninterrupted_continuation.json')['fingerprint']
+    schema=reference.get('schema_version',1)
+    state=state_fingerprint(engine.model,engine.optimizer,engine.scheduler,engine.progress,schema_version=schema)
     comparison={key:state[key]==reference[key] for key in reference}
     if not all(comparison.values()):
         write_json(engine.output/'resume_comparison_failed.json',{'comparisons':comparison,'reference':reference,'resumed':state})
@@ -43,9 +45,10 @@ def verify(summary_path):
             'resume_start_progress':before_progress,'resume_end_progress':engine.progress,
             'resume_optimizer_steps':trained['steps'],'resume_step_seconds':trained['step_seconds'],
             'uninterrupted_vs_resumed':comparison,'full_state_bitwise_equal':all(comparison.values()),
+            'fingerprint_schema':schema,'resume_contract_schema':2,
             'resumed_checkpoint':str(saved),'output':str(engine.output),'no_final_test_access':True}
     write_json(engine.output/'verification.json',result)
-    write_json(ROOT/'results/step4/reload_resume_verification.json',result)
+    write_json(Path(result_path) if result_path else ROOT/'results/step4/reload_resume_verification.json',result)
     engine.log('reload_and_resume_verified',**result)
     return result
 
@@ -53,4 +56,6 @@ def verify(summary_path):
 if __name__=='__main__':
     parser=argparse.ArgumentParser()
     parser.add_argument('--summary',default=str(ROOT/'results/step4/latest_overfit.json'))
-    verify(parser.parse_args().summary)
+    parser.add_argument('--output-root'); parser.add_argument('--result-path')
+    args=parser.parse_args()
+    verify(args.summary,args.output_root,args.result_path)

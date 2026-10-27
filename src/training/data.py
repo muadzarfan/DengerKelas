@@ -36,6 +36,8 @@ def fixed_metric_subset(rows, count, seed):
 
 class SpeechDataset(torch.utils.data.Dataset):
     def __init__(self, rows, processor, mode='clean', condition='clean', cache_examples=0):
+        if not rows:
+            raise ValueError('Empty dataset rejected')
         if any(r['split'] not in ('train','validation') or not r['eligible'] for r in rows):
             raise ValueError('Excluded or final test record rejected')
         if mode == 'E2' and any(r['split'] != 'train' for r in rows):
@@ -50,6 +52,13 @@ class SpeechDataset(torch.utils.data.Dataset):
         self.cache = OrderedDict()
         self.cfg = read_json(ROOT/'configs/data_preparation.json')['augmentation']
         self.noise = {r['split']:r for r in read_jsonl(ROOT/'data/manifests/demand_noise.jsonl') if r['split'] != 'test'}
+        if mode!='clean':
+            from .integrity import verify_noise
+            roles=read_json(ROOT/'configs/data_sources.json')['demand']['roles']
+            for split in {r['split'] for r in rows}:
+                verify_noise(self.noise[split],split,roles[split])
+        if mode=='fixed_noise' and condition not in {f'{snr:g}dB' for snr in self.cfg['evaluation_snr_db']}:
+            raise ValueError('Validation noise condition must use a fixed Step 3 SNR')
         # Only requested manifests and relevant train/validation audio are opened.
         for r in rows:
             path = ROOT/r['audio_path']

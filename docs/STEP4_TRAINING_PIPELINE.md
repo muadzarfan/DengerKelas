@@ -1,5 +1,7 @@
 # Step 4 — training pipeline dan verifikasi
 
+> Catatan audit 27 Oktober 2026: angka dan bukti di bawah adalah snapshot diagnosis 25 Oktober. Penguatan resume/integritas setelah itu serta hasil pemeriksaan terkini dirangkum di [PROJECT_STATUS.md](../PROJECT_STATUS.md). Snapshot historis tidak ditimpa dengan hasil audit baru.
+
 Status: **Selesai**. Ini verifikasi pipeline dengan diagnosis singkat, bukan eksperimen penuh B/E1/E2, benchmark final, atau model siap deployment. Sumber angka utama: `results/step4/verification_summary.json`; salinan bukti untuk review ada di [evidence/step4](evidence/step4/README.md). Semua angka/grafik berasal dari eksekusi aktual.
 
 ## Lingkungan dan sumber yang digunakan

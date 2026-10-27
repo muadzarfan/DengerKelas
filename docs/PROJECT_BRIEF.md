@@ -2,6 +2,8 @@
 
 ## Identity and scope
 
+Current implementation status is centralized in [PROJECT_STATUS.md](../PROJECT_STATUS.md). This brief describes the intended final system. Step 2 already implements the pretrained streaming prototype; Step 3 prepared data; Step 4 verified diagnostic training. Agreement-based stabilization, full experiments and user evaluation remain pending.
+
 - **Name:** DengerKelas (renamed from KelasTeks; the agreed concept is otherwise preserved).
 - **Formal title:** Noise Augmentation and Transcript Stability for Local Real-Time Indonesian Lecture Captioning.
 - **Purpose:** Investigate whether noise augmentation improves a compact Indonesian ASR model on unseen background noise, and whether agreement-based stabilization improves reading experience enough to justify added display delay.
@@ -27,7 +29,7 @@ Whisper does not inherently provide streaming; an explicit repeated-window/strea
 - **Input:** live audio from one microphone, resampled correctly to mono 16 kHz; short single-speaker Indonesian speech.
 - **Output:** interim/provisional words that update as speech arrives, then stable/settled text after successive updates agree; timestamps and event timing for evaluation. Stability is not a correctness or calibrated-confidence claim.
 
-## MVP acceptance criteria (planned, not yet achieved)
+## Final MVP acceptance criteria (partially achieved; see current status)
 
 - Continuous local microphone capture and inference while the speaker is talking, with updates before speech ends.
 - Bounded overlapping buffer and timestamp-aware merging without systematic omissions/duplication in observed examples.

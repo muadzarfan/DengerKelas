@@ -1,0 +1,12 @@
+{
+  "model_ready": true,
+  "error": null,
+  "runtime": {
+    "faster_whisper": "1.2.1",
+    "ctranslate2": "4.8.3",
+    "cuda_devices": 0,
+    "model_path": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\data\\checkpoints\\whisper-tiny-ct2",
+    "device": "cpu",
+    "compute_type": "int8"
+  }
+}

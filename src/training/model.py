@@ -5,6 +5,11 @@ from src.data.common import ROOT
 
 
 def load_model(path=None):
+    from .integrity import verify_pretrained,verify_checkpoint
+    if path is None:
+        verify_pretrained()
+    else:
+        verify_checkpoint(path)
     path = ROOT/'data/checkpoints/whisper-tiny-training' if path is None else path
     model = WhisperForConditionalGeneration.from_pretrained(str(path), local_files_only=True, attn_implementation='sdpa')
     if model.config.vocab_size != 51865 or model.config.decoder_start_token_id != 50258:
@@ -25,6 +30,11 @@ def load_model(path=None):
 
 
 def load_processor(path=None):
+    from .integrity import verify_processor,verify_checkpoint
+    if path is None:
+        verify_processor()
+    else:
+        verify_checkpoint(path)
     path = ROOT/'data/checkpoints/whisper-tiny-processor' if path is None else path
     p = WhisperProcessor.from_pretrained(str(path), local_files_only=True, language='Indonesian', task='transcribe')
     p.tokenizer.set_prefix_tokens(language='Indonesian',task='transcribe',predict_timestamps=False)

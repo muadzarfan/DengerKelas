@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "os": "Windows-11-10.0.26200-SP0",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-13420H",
+  "physical_cores": 8,
+  "logical_cores": 12,
+  "ram_bytes": 16857817088,
+  "available_ram_bytes": 3728199680,
+  "versions": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.20.2",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "soundfile": "0.14.0",
+    "safetensors": "0.8.0"
+  },
+  "torch_cuda_build": null,
+  "cuda_available": false,
+  "gpus": [],
+  "cpu_threads": 4,
+  "cpu_precision_used": "fp32",
+  "cuda_bf16_supported": false
+}

@@ -1,0 +1,10 @@
+{
+  "configs/data_sources.json": "8351b6de063a5ed0ed0b0c30ced7a2f7794356cff816e605f96b726cdbc99f41",
+  "configs/data_preparation.json": "13f9bcc2e99688174a42d11e3b12979e3593ba4b276db6696be3e565696fd7c4",
+  "data/manifests/fleurs_train.jsonl": "7de92a29b4d69772bb29720d5bda2bb24fa295069068177a0b1024f39a2a5562",
+  "data/manifests/fleurs_validation.jsonl": "3734e14549ea630e8e0f0a3c9e9de64c55d6ba07562cfc2302c50a468a7c9e02",
+  "data/manifests/demand_noise.jsonl": "3dd1994294c0c771881ef657dae7220f289a473dd84cf8960633c4e6aa2029e7",
+  "data/manifests/validation_noisy_recipes.jsonl": "ed93785746ed3f3d9d0bfa1292fd4f2035adcf8e32a891f5c9eeef870baad437",
+  "pretrained_weight_sha256": "7ebd0e69e78190ffe1438491fa05cc1f5c1aa3a4c4db3bc1723adbb551ea2395",
+  "dataset_revision": "70bb2e84b976b7e960aa89f1c648e09c59f894dd"
+}

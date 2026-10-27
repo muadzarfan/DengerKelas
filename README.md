@@ -6,6 +6,8 @@ Local Indonesian captions for one nearby speaker, one microphone, and one laptop
 
 ## Current status
 
+**Start here: [project status and latest audit](PROJECT_STATUS.md)** (27 October 2026). It separates completed stages, diagnostic results, remaining work and the fixes made after Step 4. Historical evidence under `docs/evidence/step3/` and `step4/` remains unchanged.
+
 **Step 2 feasibility: Pass within the tested conditions.** A 125-second browser-paced speech replay produced 123 text updates and eight buffer rollovers. Actual browser microphone sessions were logged, and the student confirmed live text, Stop/final flush, and Reset on the intended demonstration computer. See [findings and limits](docs/STEP2_STREAMING_FEASIBILITY.md).
 
 **Step 3 data preparation: complete and verified.** Indonesian FLEURS official splits and the three assigned DEMAND environments are downloaded, audited and represented in reproducible manifests. See the [dataset card](docs/DATASET_CARD.md), [sources/licenses](docs/DATA_SOURCES_AND_LICENSES.md), [execution report](docs/STEP3_DATA_PREPARATION.md), and [preserved evidence](docs/evidence/step3/README.md). Manual listening review remains pending; semantic audio/label alignment is not established by numeric checks.

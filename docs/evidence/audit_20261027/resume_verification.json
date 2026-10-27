@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "new_process": true,
+  "checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\audit_resume_reference_20261027_143645\\schema2-migrated-diagnostic-only",
+  "reloaded_processor": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\audit_resume_reference_20261027_143645\\schema2-migrated-diagnostic-only",
+  "raw_generated_tokens_equal": true,
+  "references_equal": true,
+  "reloaded_loss": 0.0006660425322678909,
+  "reloaded_wer": 0.0,
+  "resume_start_progress": {
+    "epoch": 6,
+    "next_micro_batch": 0,
+    "global_step": 24,
+    "micro_step": 24,
+    "best_validation_wer": 0.9444444444444444,
+    "best_checkpoint": null
+  },
+  "resume_end_progress": {
+    "epoch": 6,
+    "next_micro_batch": 2,
+    "global_step": 26,
+    "micro_step": 26,
+    "best_validation_wer": 0.9444444444444444,
+    "best_checkpoint": null
+  },
+  "resume_optimizer_steps": 2,
+  "resume_step_seconds": [
+    2.980251400033012,
+    5.894457799964584
+  ],
+  "uninterrupted_vs_resumed": {
+    "model": true,
+    "optimizer": true,
+    "scheduler": true,
+    "progress": true,
+    "torch_rng": true,
+    "numpy_rng": true,
+    "python_rng": true,
+    "schema_version": true,
+    "cuda_rng": true
+  },
+  "full_state_bitwise_equal": true,
+  "fingerprint_schema": 2,
+  "resume_contract_schema": 2,
+  "resumed_checkpoint": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\checkpoints\\diagnostic_reload_resume_20261027_143758\\resumed-diagnostic-only",
+  "output": "C:\\Users\\Muadz Arfan\\Documents\\Codex\\2026-10-25\\files-pasted-by-the-user-step\\DengerKelas\\results\\audit_20261027\\diagnostic_reload_resume_20261027_143758",
+  "no_final_test_access": true
+}

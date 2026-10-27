@@ -1,5 +1,9 @@
 # Environment inventory and verification
 
+## Latest audit — 2026-10-27
+
+See [PROJECT_STATUS.md](../PROJECT_STATUS.md) and local `docs/evidence/audit_20261027/` for the latest checks and fixes. The versioned Step 2–4 evidence below records the original 25 October checkpoints. The current audit reuses the installed environment; no package upgrades or full experiments are implied. The stopped localhost server was restarted and its health endpoint reported `model_ready=true`, CPU INT8/pretrained Tiny. This health check is not a new human microphone confirmation.
+
 ## Step 4 current training environment — verified 2026-10-25
 
 The same `.venv` now contains **PyTorch 2.14.1+cpu**, Transformers 5.20.2 and the Step 3 audio/numeric stack. The official CPU wheel was installed into the project environment only; `pip check` passed. Actual installed versions: `requirements/step4-windows-py312-cpu.lock.txt`. Requirements for a new CPU environment: `requirements/training-cpu.txt`; portable training requirements use the compatible PyTorch version without forcing a CPU wheel.

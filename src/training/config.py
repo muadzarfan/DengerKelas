@@ -73,3 +73,9 @@ def environment():
 
 def total_steps(cfg, size):
     return cfg['max_steps'] or math.ceil(math.ceil(size/cfg['physical_batch_size'])/cfg['gradient_accumulation'])*cfg['epochs']
+
+
+def next_evaluation_step(current, frequency, limit):
+    if frequency<1 or limit<=current:
+        raise ValueError('Invalid evaluation boundary or completed budget')
+    return min(limit, (current//frequency+1)*frequency)

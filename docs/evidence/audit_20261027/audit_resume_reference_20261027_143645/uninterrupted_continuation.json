@@ -1,0 +1,25 @@
+{
+  "purpose": "two audit-only reference steps; no full experiment",
+  "step_seconds": [
+    2.805549700045958,
+    3.1115947000216693
+  ],
+  "fingerprint": {
+    "model": "1aabb6e864dc7633528dd5fb37ed1a0dc24dc1e22787f3623f185dc515a7bb8e",
+    "optimizer": "997f877fdaacd612c43e8833a2f3c5872b92613d3ba6a7b9893fc18b3191ea44",
+    "scheduler": "40f5bb83575bcfdc4f9db2fb3c8f4efa9499e0dc7cfd2bfd8195d1cb4eb61882",
+    "progress": {
+      "epoch": 6,
+      "next_micro_batch": 2,
+      "global_step": 26,
+      "micro_step": 26,
+      "best_validation_wer": 0.9444444444444444,
+      "best_checkpoint": null
+    },
+    "torch_rng": "87fcde0cc149e7f55c1e99abbb1da9160ddd8494182c60199a5b2ae0b36374a3",
+    "numpy_rng": "0c8823c8fd29db2956d9b5deb8c2fd98f9f77d1b8f059b31c7eac83698b2c501",
+    "python_rng": "5608e8cad327d523dc706665b8519c0529ea0419c7acc8299ec2e51f332c5fb8",
+    "schema_version": 2,
+    "cuda_rng": "dc937b59892604f5a86ac96936cd7ff09e25f18ae6b758e8014a24c7fa039e91"
+  }
+}

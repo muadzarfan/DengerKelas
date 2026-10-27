@@ -1,0 +1,23 @@
+test_resume_signature_locks_evaluation_policy (test_audit_regressions.AuditRegressions.test_resume_signature_locks_evaluation_policy) ... FAIL
+test_resume_signature_locks_ordered_examples (test_audit_regressions.AuditRegressions.test_resume_signature_locks_ordered_examples) ... FAIL
+
+======================================================================
+FAIL: test_resume_signature_locks_evaluation_policy (test_audit_regressions.AuditRegressions.test_resume_signature_locks_evaluation_policy)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Muadz Arfan\Documents\Codex\2026-10-25\files-pasted-by-the-user-step\DengerKelas\tests\test_audit_regressions.py", line 27, in test_resume_signature_locks_evaluation_policy
+    self.assertNotEqual(signature(before),signature(after))
+AssertionError: {'seed': 20261025, 'physical_batch_size': 4, 'gradient_accumulation': 4, 'learning_rate': 1e-05, 'weight_decay': 0.01, 'scheduler': 'linear', 'warmup_ratio': 0.05, 'max_grad_norm': 1.0, 'augmentation': 'clean', 'resolved_precision': 'fp32', 'gradient_checkpointing': False} == {'seed': 20261025, 'physical_batch_size': 4, 'gradient_accumulation': 4, 'learning_rate': 1e-05, 'weight_decay': 0.01, 'scheduler': 'linear', 'warmup_ratio': 0.05, 'max_grad_norm': 1.0, 'augmentation': 'clean', 'resolved_precision': 'fp32', 'gradient_checkpointing': False}
+
+======================================================================
+FAIL: test_resume_signature_locks_ordered_examples (test_audit_regressions.AuditRegressions.test_resume_signature_locks_ordered_examples)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Muadz Arfan\Documents\Codex\2026-10-25\files-pasted-by-the-user-step\DengerKelas\tests\test_audit_regressions.py", line 21, in test_resume_signature_locks_ordered_examples
+    self.assertNotEqual(signature(before),signature(after))
+AssertionError: {'seed': 20261025, 'physical_batch_size': 4, 'gradient_accumulation': 4, 'learning_rate': 1e-05, 'weight_decay': 0.01, 'scheduler': 'linear', 'warmup_ratio': 0.05, 'max_grad_norm': 1.0, 'augmentation': 'clean', 'resolved_precision': 'fp32', 'gradient_checkpointing': False} == {'seed': 20261025, 'physical_batch_size': 4, 'gradient_accumulation': 4, 'learning_rate': 1e-05, 'weight_decay': 0.01, 'scheduler': 'linear', 'warmup_ratio': 0.05, 'max_grad_norm': 1.0, 'augmentation': 'clean', 'resolved_precision': 'fp32', 'gradient_checkpointing': False}
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.004s
+
+FAILED (failures=2)

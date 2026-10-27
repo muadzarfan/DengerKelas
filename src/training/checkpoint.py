@@ -1,6 +1,7 @@
 """Local complete resume state, distinct from loading model weights alone."""
 import random
 import hashlib
+import copy
 import numpy as np
 import torch
 from src.data.common import ROOT, write_json, read_json, digest
@@ -20,9 +21,18 @@ def identity():
 
 
 def signature(cfg):
-    return {k:cfg[k] for k in ('seed','physical_batch_size','gradient_accumulation','learning_rate',
+    keys=('seed','physical_batch_size','gradient_accumulation','learning_rate',
                               'weight_decay','scheduler','warmup_ratio','max_grad_norm','augmentation',
-                              'resolved_precision','gradient_checkpointing')}
+          'resolved_precision','gradient_checkpointing','resolved_device','cpu_threads','kind','epochs',
+          'train_recording_ids','validation_recording_ids','generation_max_new_tokens',
+          'validation_conditions','selection_metric','train_metric_examples','eval_every_steps')
+    return copy.deepcopy({k:cfg[k] for k in keys})
+
+
+def validate_resume_config(previous,current):
+    if signature(previous)!=signature(current):
+        changed=[k for k in signature(previous) if signature(previous)[k]!=signature(current)[k]]
+        raise ValueError(f'Resume data/order/evaluation/training config differs: {changed}')
 
 
 def capture_rng():
@@ -45,7 +55,7 @@ def save(folder, model, processor, optimizer, scheduler, scaler, progress, cfg, 
     processor.save_pretrained(temporary)
     state = {'optimizer':optimizer.state_dict(),'scheduler':scheduler.state_dict(),'scaler':scaler.state_dict(),
              'progress':progress.copy(),'rng':capture_rng(),'data_identity':data_identity,
-             'config_signature':signature(cfg),'scheduler_total_steps':cfg['scheduler_total_steps']}
+             'config_signature':signature(cfg),'resume_schema':2,'scheduler_total_steps':cfg['scheduler_total_steps']}
     torch.save(state,temporary/'training_state.pt')
     write_json(temporary/'run_config.json',cfg)
     write_json(temporary/'data_identity.json',data_identity)
@@ -58,14 +68,20 @@ def save(folder, model, processor, optimizer, scheduler, scaler, progress, cfg, 
 
 
 def restore(folder, optimizer, scheduler, scaler, cfg, data_identity):
-    checks = read_json(folder/'artifact_checksums.json')
-    if any(digest(folder/name) != checksum for name,checksum in checks.items()):
-        raise ValueError('Checkpoint integrity mismatch')
+    from .integrity import verify_checkpoint
+    verify_checkpoint(folder)
     # This is our own local state file, including Python/NumPy RNG objects.
     # Never use this API with an untrusted downloaded training_state.pt.
     state = torch.load(folder/'training_state.pt',map_location='cpu',weights_only=False)
-    if state['data_identity'] != data_identity or state['config_signature'] != signature(cfg):
+    if state['data_identity'] != data_identity:
         raise ValueError('Resume data/config differs from saved training state')
+    previous=read_json(folder/'run_config.json')
+    validate_resume_config(previous,cfg)
+    # Older local checkpoints lack the expanded signature, but their checksummed
+    # run_config contains the ordered IDs and evaluation settings for validation.
+    expected=signature(previous)
+    if any(k not in expected or expected[k]!=v for k,v in state['config_signature'].items()):
+        raise ValueError('Saved resume signature disagrees with checkpoint run_config')
     if state['scheduler_total_steps'] != cfg['scheduler_total_steps']:
         raise ValueError('Resume must retain the original scheduler horizon')
     optimizer.load_state_dict(state['optimizer']); scheduler.load_state_dict(state['scheduler'])
@@ -73,7 +89,7 @@ def restore(folder, optimizer, scheduler, scaler, cfg, data_identity):
     return state['progress']
 
 
-def state_fingerprint(model, optimizer, scheduler, progress):
+def state_fingerprint(model, optimizer, scheduler, progress, schema_version=2):
     """Stable tensor/state digest to compare uninterrupted vs complete resume."""
     def hash_value(value):
         h = hashlib.sha256()
@@ -90,8 +106,15 @@ def state_fingerprint(model, optimizer, scheduler, progress):
             else: h.update(repr(x).encode())
         update(value)
         return h.hexdigest()
-    return {'model':hash_value(model.state_dict()),'optimizer':hash_value(optimizer.state_dict()),
+    result={'model':hash_value(model.state_dict()),'optimizer':hash_value(optimizer.state_dict()),
             'scheduler':hash_value(scheduler.state_dict()),'progress':progress.copy(),
             'torch_rng':hash_value(torch.get_rng_state()),
             'numpy_rng':hash_value(np.random.get_state()[1].tolist()),
             'python_rng':hash_value(random.getstate())}
+    if schema_version==2:
+        rng=np.random.get_state()
+        result.update(schema_version=2,numpy_rng=hash_value([rng[0],rng[1].tolist(),*rng[2:]]),
+                      cuda_rng=hash_value(torch.cuda.get_rng_state_all() if torch.cuda.is_available() else None))
+    elif schema_version!=1:
+        raise ValueError('Unknown fingerprint schema')
+    return result

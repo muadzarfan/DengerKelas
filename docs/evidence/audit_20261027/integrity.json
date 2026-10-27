@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-27",
+  "base_commit": "def24cf1747dcb08d826211ec35dc3ba792aca64",
+  "scope": "integrity only; no final-test ASR, tuning or listening",
+  "official_artifacts": {
+    "checked": 21,
+    "failed": []
+  },
+  "speech": {
+    "train": {
+      "total": 2579,
+      "eligible": 2538,
+      "excluded": 41,
+      "seconds": 32736.84
+    },
+    "validation": {
+      "total": 350,
+      "eligible": 345,
+      "excluded": 5,
+      "seconds": 4173.12
+    },
+    "test": {
+      "total": 687,
+      "eligible": 678,
+      "excluded": 9,
+      "seconds": 8515.44
+    }
+  },
+  "speech_integrity": {
+    "waveforms_decoded": 3616,
+    "failures": []
+  },
+  "noise_roles": {
+    "train": "OOFFICE",
+    "validation": "OHALLWAY",
+    "test": "PCAFETER"
+  },
+  "historical_evidence": {
+    "report_hashes_verified": 124,
+    "source_hashes_verified_against_original_commit": 25,
+    "working_source_changes_since_step4": [
+      "src/training/checkpoint.py",
+      "src/training/config.py",
+      "src/training/data.py",
+      "src/training/model.py",
+      "src/training/reload.py",
+      "src/training/run.py"
+    ],
+    "step3_locks_preserved": true
+  },
+  "git": {
+    "tracked_forbidden_artifacts": [],
+    "full_experiment_directories": []
+  },
+  "status": "passed",
+  "failures": [],
+  "elapsed_seconds": 30.64496700000018
+}

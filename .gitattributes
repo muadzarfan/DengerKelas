@@ -6,3 +6,5 @@ data/manifests/*.jsonl -text
 docs/evidence/step3/** -text
 configs/training*.json -text
 docs/evidence/step4/** -text
+docs/evidence/audit_20261027/** -text
+PROJECT_STATUS.md -text

@@ -1,0 +1,45 @@
+test_E2_loader_invokes_noise_integrity_gate (test_audit_regressions.AuditRegressions.test_E2_loader_invokes_noise_integrity_gate) ... ok
+test_checkpoint_integrity_accepts_combined_processor_layout (test_audit_regressions.AuditRegressions.test_checkpoint_integrity_accepts_combined_processor_layout) ... ok
+test_evaluation_stays_on_original_step_grid_after_resume (test_audit_regressions.AuditRegressions.test_evaluation_stays_on_original_step_grid_after_resume) ... ok
+test_model_integrity_checked_before_loading (test_audit_regressions.AuditRegressions.test_model_integrity_checked_before_loading) ... ok
+test_noise_corruption_and_wrong_role_rejected (test_audit_regressions.AuditRegressions.test_noise_corruption_and_wrong_role_rejected) ... ok
+test_numpy_rng_position_is_part_of_full_fingerprint (test_audit_regressions.AuditRegressions.test_numpy_rng_position_is_part_of_full_fingerprint) ... ok
+test_resume_rejects_changed_scope_and_validation (test_audit_regressions.AuditRegressions.test_resume_rejects_changed_scope_and_validation) ... ok
+test_resume_signature_is_an_immutable_snapshot (test_audit_regressions.AuditRegressions.test_resume_signature_is_an_immutable_snapshot) ... ok
+test_resume_signature_locks_evaluation_policy (test_audit_regressions.AuditRegressions.test_resume_signature_locks_evaluation_policy) ... ok
+test_resume_signature_locks_ordered_examples (test_audit_regressions.AuditRegressions.test_resume_signature_locks_ordered_examples) ... ok
+test_minimal_training_vs_symmetric_scoring (test_data_preparation.DataChecks.test_minimal_training_vs_symmetric_scoring) ... ok
+test_seed_role_and_target_preservation (test_data_preparation.DataChecks.test_seed_role_and_target_preservation) ... ok
+test_snr_and_shared_gain_prevent_clipping (test_data_preparation.DataChecks.test_snr_and_shared_gain_prevent_clipping) ... ok
+test_tsv_literal_quotes_and_real_resampling (test_data_preparation.DataChecks.test_tsv_literal_quotes_and_real_resampling) ... ok
+test_zero_energy_and_wrap (test_data_preparation.DataChecks.test_zero_energy_and_wrap) ... ok
+test_continuous_resampling_matches_whole_signal (test_streaming.AudioTests.test_continuous_resampling_matches_whole_signal) ... ok
+test_integer_and_stereo (test_streaming.AudioTests.test_integer_and_stereo) ... ok
+test_invalid_audio (test_streaming.AudioTests.test_invalid_audio) ... ok
+test_cancel_then_new_session_is_empty (test_streaming.SessionTests.test_cancel_then_new_session_is_empty) ... ok
+test_capture_continues_during_decode_and_overflow_is_explicit (test_streaming.SessionTests.test_capture_continues_during_decode_and_overflow_is_explicit) ... ok
+test_rollover_stop_flush_and_bounded_storage (test_streaming.SessionTests.test_rollover_stop_flush_and_bounded_storage) ... ok
+test_silence_gate_and_failure_cleanup (test_streaming.SessionTests.test_silence_gate_and_failure_cleanup) ... ok
+test_repetition_and_overlapping_replacement (test_streaming.TranscriptTests.test_repetition_and_overlapping_replacement) ... ok
+test_configs_effective_batch_and_controlled_variables (test_training_pipeline.TrainingChecks.test_configs_effective_batch_and_controlled_variables) ... ok
+test_final_test_and_excluded_rows_rejected (test_training_pipeline.TrainingChecks.test_final_test_and_excluded_rows_rejected) ... ok
+test_real_collator_masks_padding_preserves_eos (test_training_pipeline.TrainingChecks.test_real_collator_masks_padding_preserves_eos) ... ok
+test_wer_counts_and_symmetric_normalization (test_training_pipeline.TrainingChecks.test_wer_counts_and_symmetric_normalization) ... ok
+Local model load failed: Missing local model file model.bin; run python -m src.evaluation.download_assets --model
+C:\Users\Muadz Arfan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:730: ResourceWarning: unclosed event loop <ProactorEventLoop running=False closed=False debug=False>
+  _warn(f"unclosed event loop {self!r}", ResourceWarning, source=self)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\Muadz Arfan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:730: ResourceWarning: unclosed event loop <ProactorEventLoop running=False closed=False debug=False>
+  _warn(f"unclosed event loop {self!r}", ResourceWarning, source=self)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+C:\Users\Muadz Arfan\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:730: ResourceWarning: unclosed event loop <ProactorEventLoop running=False closed=False debug=False>
+  _warn(f"unclosed event loop {self!r}", ResourceWarning, source=self)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+test_audio_without_start_is_rejected (test_transport.TransportTests.test_audio_without_start_is_rejected) ... ok
+test_microphone_failure_message_and_reset (test_transport.TransportTests.test_microphone_failure_message_and_reset) ... ok
+test_missing_model_keeps_interface_available (test_transport.TransportTests.test_missing_model_keeps_interface_available) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 2.581s
+
+OK

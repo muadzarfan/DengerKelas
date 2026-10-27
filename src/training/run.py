@@ -6,7 +6,7 @@ import time
 import traceback
 from pathlib import Path
 from src.data.common import ROOT, write_json
-from .config import load, setup, total_steps
+from .config import load, setup, total_steps, next_evaluation_step
 from .data import records, short_subset, fixed_metric_subset, SpeechDataset
 from .model import load_processor
 from .engine import Engine
@@ -43,6 +43,14 @@ def run(config_path, allow_experiment=False, resume=None, output=None):
     cfg['train_recording_ids'] = [r['recording_id'] for r in train_rows]
     cfg['validation_recording_ids'] = [r['recording_id'] for r in val_rows]
     assert not set(cfg['train_recording_ids']) & set(cfg['validation_recording_ids'])
+    limit=total_steps(cfg,len(train_rows))
+    if cfg['kind']=='diagnostic' and not 0<limit<=64:
+        raise ValueError('Computed diagnostic training budget must be 1–64 updates')
+    if resume:
+        from .checkpoint import validate_resume_config
+        validate_resume_config(previous,cfg)
+        if cfg['kind']=='experiment' and limit!=cfg['scheduler_total_steps']:
+            raise ValueError('Resume cannot change the original experiment scheduler horizon')
     train = SpeechDataset(train_rows,proc,cfg['augmentation'],cache_examples=cfg['feature_cache_examples'])
     metric_rows = train_rows if cfg['kind']=='diagnostic' else fixed_metric_subset(train_rows,cfg['train_metric_examples'],cfg['seed'])
     metric_train = SpeechDataset(metric_rows,proc,'clean',cache_examples=cfg['feature_cache_examples'])
@@ -59,7 +67,7 @@ def run(config_path, allow_experiment=False, resume=None, output=None):
         if engine.progress['global_step'] >= limit:
             raise ValueError('Checkpoint already reached the requested budget; no resume steps would be performed')
         while engine.progress['global_step'] < limit:
-            target = min(limit,engine.progress['global_step']+cfg['eval_every_steps'])
+            target = next_evaluation_step(engine.progress['global_step'],cfg['eval_every_steps'],limit)
             trained = engine.train_to(target,verify_update=engine.progress['global_step']==0)
             timings.extend(trained['step_seconds'])
             step = engine.progress['global_step']
@@ -75,7 +83,7 @@ def run(config_path, allow_experiment=False, resume=None, output=None):
             evaluations.append({'step':step,'train':train_metrics,'validation_clean':val_metrics,'validation_noise':extra})
             current = val_metrics['wer']
             best = engine.progress['best_validation_wer']
-            improve = best is None or current < best
+            improve = cfg['kind']=='experiment' and (best is None or current < best)
             if improve: engine.progress['best_validation_wer'] = current
             # Tiny-overfit stopping uses training subset diagnostics, not validation tuning.
             stopping = (cfg['kind']=='diagnostic' and 'overfit' in cfg['run_id']
